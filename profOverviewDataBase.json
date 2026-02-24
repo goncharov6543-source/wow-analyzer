@@ -8506,6 +8506,89 @@
                     ]
                 }
             ]
+        },
+
+        {
+            "groupName": "Light Potions",
+            "icon": "./profOverviewIcons/LightPotions.jpg",
+            "recipes": [
+                {
+                    "item": "Light's potential t1",
+                    "id": "241309",
+                    "color": "#E5E4E2",
+                    "craftTime": 2,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 30, "statPenalty": 20, "multiBonus": 2.5 },
+                        { "name": "Crafting Speed", "count": 35 }
+                    ],
+                    "reagents": [
+                        { "name": "Mote of Light", "id": "236949", "count": 1 },
+                        { "name": "Sunglass Vial t1", "id": "240991", "count": 5 },
+                        { "name": "Tranquility Bloom t1", "id": "236761", "count": 8 },
+                        { "name": "Argentleaf t1", "id": "236776", "count": 3 },
+                        { "name": "Azeroot t1", "id": "236774", "count": 3 }
+                    ],
+                    "outputs": [
+                        { "name": "Light's potential t1", "id": "241309", "count": 5}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory2Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory3Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/LightPotionsTalantes1.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+
+            ]
         }
     ],
     "TAILORING": [],
