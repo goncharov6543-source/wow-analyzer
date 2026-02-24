@@ -1,0 +1,1271 @@
+[
+    {
+        "name": "Enchant Ring - Radiant Critical Strike",
+        "id": 223662,
+        "prof": "ENCHANTING",
+        "ConcCost": 181,
+        "recipe": [
+          { "name": "Profaned Tinderbox", "id": 221758, "count": 1 },
+          { "name": "Storm Dust", "id": 219947, "count": 30 },
+          { "name": "Gleaming Shard", "id": 219950, "count": 5 }
+        ],
+        "stats": [
+          { "name": "Difficulty", "count": 480 },
+          { "name": "Concentration", "count": 138 },
+          { "name": "Resourcefulness", "count": 36, "unit": "%" },
+          { "name": "Ingenuity", "count": 53, "unit": "%" }
+        ]
+    },
+    {
+      "name": "Enchant Weapon - Stormrider's Fury",
+      "id": 223762,
+      "ConcCost": 138,
+      "prof": "ENCHANTING",
+      "statPenalty": 0,
+      "recipe": [
+        { "name": "Ringing Deeps Ingot", "id": 221754, "count": 1 },
+        { "name": "Storm Dust", "id": 219947, "count": 50 },
+        { "name": "Gleaming Shard", "id": 219950, "count": 5 },
+        { "name": "Refulgent Crystal", "id": 219954, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 138 },
+        { "name": "Resourcefulness", "count": 36, "unit": "%" },
+        { "name": "Ingenuity", "count": 53, "unit": "%" }
+      ]
+    },
+    {
+        "name": "Enchant Ring - Radiant Haste",
+        "id": 223674,
+        "prof": "ENCHANTING",
+        "ConcCost": 181,
+        "recipe": [
+          { "name": "Profaned Tinderbox", "id": 221758, "count": 1 },
+          { "name": "Storm Dust", "id": 219947, "count": 30 },
+          { "name": "Gleaming Shard", "id": 219950, "count": 5 }
+        ]
+    },
+    {
+        "name": "Enchant Ring - Radiant Mastery",
+        "id": 223677,
+        "prof": "ENCHANTING",
+        "ConcCost": 181,
+        "recipe": [
+          { "name": "Profaned Tinderbox", "id": 221758, "count": 1 },
+          { "name": "Storm Dust", "id": 219947, "count": 30 },
+          { "name": "Gleaming Shard", "id": 219950, "count": 5 }
+        ]
+    },
+
+
+
+
+
+    {
+      "name": "Sterling Alloy",
+      "id": 238205,
+      "prof": "BLACKSMITHING",
+      "ConcCost": 179,
+      "recipe": [
+        { "name": "Luminant Flux", "id": 243060, "count": 4 },
+        { "name": "Brilliant Silver Ore t1", "id": 237364, "count": 6 },
+        { "name": "Refulgent Copper Ingot t1", "id": 238197, "count": 3 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 179 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Gloaming Alloy",
+      "id": 238203,
+      "prof": "BLACKSMITHING",
+      "ConcCost": 179,
+      "recipe": [
+        { "name": "Luminant Flux", "id": 243060, "count": 4 },
+        { "name": "Umbral Tin Ore t1", "id": 237362, "count": 6 },
+        { "name": "Refulgent Copper Ingot t1", "id": 238197, "count": 3 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 179 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Refulgent Copper Ingot",
+      "id": 238198,
+      "prof": "BLACKSMITHING",
+      "ConcCost": 178,
+      "recipe": [
+        { "name": "Luminant Flux", "id": 243060, "count": 2 },
+        { "name": "Refulgent Copper Ore t1", "id": 237359, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 300 },
+        { "name": "Concentration", "count": 178 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+
+
+
+
+    
+    {
+      "name": "Enchant Boots - Farstrider's Hunt",
+      "id": 244009,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 10 },
+        { "name": "Fantastic Fur", "id": 238525, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Boots - Lynx's Dexterity",
+      "id": 243953,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 10 },
+        { "name": "Carving Canine", "id": 238523, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Boots - Shaladrassil's Roots",
+      "id": 243983,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 10 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 10 },
+        { "name": "Radiant Shard", "id": 243602, "count": 5 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 },
+        { "name": "Azeroot", "id": 236774, "count": 20 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Chest - Mark of Nalorakk",
+      "id": 243947,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 5 },
+        { "name": "Majestic Claw", "id": 238528, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Chest - Mark of the Magister",
+      "id": 244003,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Arcanoweave Bolt", "id": 239198, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Chest - Mark of the Rootwarden",
+      "id": 243975,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 5 },
+        { "name": "Majestic Fin", "id": 238530, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Chest - Mark of the Worldsoul",
+      "id": 243977,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 5 },
+        { "name": "Majestic Hide", "id": 238529, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Helm - Empowered Blessing of Speed",
+      "id": 243981,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 20 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Helm - Empowered Hex of Leeching",
+      "id": 243951,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 20 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Helm - Empowered Rune of Avoidance",
+      "id": 244006,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 20 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Eyes of the Eagle",
+      "id": 243957,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 15 },
+        { "name": "Peerless Plumage", "id": 238522, "count": 2 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Nature's Fury",
+      "id": 243987,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 15 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Silvermoon's Alacrity",
+      "id": 244015,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 15 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Silvermoon's Tenacity",
+      "id": 244017,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 15 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Zul'jin's Mastery",
+      "id": 243959,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 15 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 15 },
+        { "name": "Radiant Shard", "id": 243602, "count": 3 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Shoulders - Akil'zon's Swiftness",
+      "id": 243963,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Shoulders - Amirdrassil;s Grace",
+      "id": 243991,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 20 },
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Shoulders - Silvermoon's Mending",
+      "id": 244021,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Acuity of the Ren'dorei",
+      "id": 244029,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 3 },
+        { "name": "Flawless Tenebrous Amethyst", "id": 242611, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Arcane Mastery",
+      "id": 244031,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 15 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Arcanoweave Bolt", "id": 239198, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Berserker's Rage",
+      "id": 243973,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Flawless Amani Lapis", "id": 242612, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Flames of the Sin'dorei",
+      "id": 244027,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 25 },
+        { "name": "Radiant Shard", "id": 243602, "count": 15 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Sunfire Silk Bolt", "id": 239201, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Jan'alai's Precision",
+      "id": 243971,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 5 },
+        { "name": "Majestic Fin", "id": 238530, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 5 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Strength of Halazzi",
+      "id": 243969,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 5 },
+        { "name": "Majestic Claw", "id": 238528, "count": 1 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 5 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Worldsoul Aegis",
+      "id": 243999,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Flawless Harandar Peridot", "id": 242610, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Worldsoul Cradle",
+      "id": 243997,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Flawless Harandar Peridot", "id": 242610, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Weapon - Worldsoul Tenacity",
+      "id": 244001,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 5 },
+        { "name": "Petrified Root", "id": 251285, "count": 4 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Flawless Harandar Peridot", "id": 242610, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Amani Perception",
+      "id": 243965,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Refulgent Copper Ingot", "id": 238197, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Amani Resourcefulness",
+      "id": 243967,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Refulgent Copper Ingot", "id": 238197, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Haranir Finesse",
+      "id": 243993,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236951, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Refulgent Copper Ingot", "id": 238197, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Haranir Multicrafting",
+      "id": 243995,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236951, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Sterling Alloy", "id": 238204, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Ren'dorei ingenuity",
+      "id": 244025,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Gloaming Alloy", "id": 238202, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Enchant Tool - Sin'dorei Deftness",
+      "id": 244023,
+      "prof": "ENCHANTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 20 },
+        { "name": "Eversinging Dust", "id": 243599, "count": 20 },
+        { "name": "Radiant Shard", "id": 243602, "count": 10 },
+        { "name": "Dawn Crystal", "id": 243605, "count": 2 },
+        { "name": "Sterling Alloy", "id": 238204, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 480 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "name": "Sunglass Vial",
+      "id": 240990,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Crystalline Glass t1", "id": 242787, "count": 5},
+        { "name": "Duskshrouded Stone t1", "id": 242788, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 555 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Prismatic Focusing Iris",
+      "id": 251488,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Sin'dorei Lens t1", "id": 240972, "count": 2},
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 2 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 555 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Stabilizing Gemstone Bandolier",
+      "id": 251490,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Sanguine Garnet t1", "id": 242553, "count": 1},
+        { "name": "Harandar Peridot t1", "id": 242607, "count": 1},
+        { "name": "Tenebrous Amethyst t1", "id": 242606, "count": 1},
+        { "name": "Amani Lapis t1", "id": 242554, "count": 1},
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 3 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 555 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Kaleidoscopic Prism",
+      "id": 240975,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Flawless Sanguine Garnet t1", "id": 242613, "count": 1},
+        { "name": "Flawless Harandar Peridot t1", "id": 242610, "count": 1},
+        { "name": "Flawless Tenebrous Amethyst t1", "id": 242611, "count": 1},
+        { "name": "Flawless Amani Lapis t1", "id": 242612, "count": 1},
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 10 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 555 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Sin'dorei Lens",
+      "id": 240973,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 1 },
+        { "name": "Crystalline Glass t1", "id": 242787, "count": 3}
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 555 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Deadly Peridot",
+      "id": 240890,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Harandar Peridot t1", "id": 242610, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Masterful Peridot",
+      "id": 240892,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Harandar Peridot t1", "id": 242610, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Quick Peridot",
+      "id": 240888,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Harandar Peridot t1", "id": 242610, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Versatile Peridot",
+      "id": 240894,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Primal Energy", "id": 236950, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Harandar Peridot t1", "id": 242610, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Deadly Lapis",
+      "id": 240914,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Amani Lapis t1", "id": 242612, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Masterful Lapis",
+      "id": 240918,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Amani Lapis t1", "id": 242612, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Quick Lapis",
+      "id": 240916,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Amani Lapis t1", "id": 242612, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Versatile Lapis",
+      "id": 240912,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Amani Lapis t1", "id": 242612, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Deadly Amethyst",
+      "id": 240898,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Tenebrous Amethyst t1", "id": 242611, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Masterful Amethyst",
+      "id": 240896,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Tenebrous Amethyst t1", "id": 242611, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Quick Amethyst",
+      "id": 240900,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Tenebrous Amethyst t1", "id": 242611, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Versatile Amethyst",
+      "id": 240902,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Pure Void", "id": 236952, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Tenebrous Amethyst t1", "id": 242611, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Deadly Garnet",
+      "id": 240904,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Sanguine Garnet t1", "id": 242613, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Masterful Garnet",
+      "id": 240908,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Sanguine Garnet t1", "id": 242613, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Quick Garnet",
+      "id": 240906,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Sanguine Garnet t1", "id": 242613, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Flawless Versatile Garnet",
+      "id": 240910,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 400,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 3 },
+        { "name": "Petrified Root", "id": 251285, "count": 1 },
+        { "name": "Flawless Sanguine Garnet t1", "id": 242613, "count": 1 },
+        { "name": "Glimmering Gemdust t1", "id": 242620, "count": 5 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 400 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Indecipherable Eversong Diamond",
+      "id": 240983,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 910,
+      "recipe": [
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversong Diamond t1", "id": 242608, "count": 1 },
+        { "name": "Kaleidoscopic Prism", "id": 240974, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 280 },
+        { "name": "Concentration", "count": 910 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Powerful Eversong Diamond",
+      "id": 240967,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 910,
+      "recipe": [
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversong Diamond t1", "id": 242608, "count": 1 },
+        { "name": "Kaleidoscopic Prism", "id": 240974, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 280 },
+        { "name": "Concentration", "count": 910 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Stoic Eversong Diamond",
+      "id": 240971,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 910,
+      "recipe": [
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversong Diamond t1", "id": 242608, "count": 1 },
+        { "name": "Kaleidoscopic Prism", "id": 240974, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 280 },
+        { "name": "Concentration", "count": 910 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Telluric Eversong Diamond",
+      "id": 240969,
+      "prof": "JEWELCRAFTING",
+      "ConcCost": 910,
+      "recipe": [
+        { "name": "Petrified Root", "id": 251285, "count": 2 },
+        { "name": "Eversong Diamond t1", "id": 242608, "count": 1 },
+        { "name": "Kaleidoscopic Prism", "id": 240974, "count": 1 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 280 },
+        { "name": "Concentration", "count": 910 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    }
+]

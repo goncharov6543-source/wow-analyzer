@@ -1,0 +1,935 @@
+{
+    "ENCHANTING": [
+      {
+        "name": "Eversinging Dust t1",
+        "id": "243599",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Eversinging Dust t2",
+        "id": "243600",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Radiant Shard t1",
+        "id": "243602",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Radiant Shard t2",
+        "id": "243603",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Dawn Crystal t1",
+        "id": "243605",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Dawn Crystal t2",
+        "id": "243606",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Mote of Light",
+        "id": "236949",
+        "itemUsed": "15"
+      },
+      {
+        "name": "Mote of Wild Magic",
+        "id": "236951",
+        "itemUsed": "15"
+      },
+      {
+        "name": "Mote of Pure Void",
+        "id": "236952",
+        "itemUsed": "15"
+      },
+      {
+        "name": "Mote of Primal Energy",
+        "id": "236950",
+        "itemUsed": "15"
+      },
+      {
+        "name": "Fantastic Fur",
+        "id": "238525",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Carving Canine",
+        "id": "238523",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Azeroot t1",
+        "id": "236774",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Azeroot t2",
+        "id": "236775",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Majestic Claw",
+        "id": "238528",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Arcanoweave Bolt t1",
+        "id": "239198",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Arcanoweave Bolt t2",
+        "id": "239200",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Majestic Hide",
+        "id": "238529",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Majestic Fin",
+        "id": "238530",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Crystalline Glass t1",
+        "id": "242787",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Crystalline Glass t2",
+        "id": "242786",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Duskshrouded Stone t1",
+        "id": "242788",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Duskshrouded Stone t2",
+        "id": "242789",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Thalassian Songwater",
+        "id": "245882",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Silverleaf Thread",
+        "id": "251665",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Luminant Flux",
+        "id": "243060",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sterling Alloy t1",
+        "id": "238204",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sterling Alloy t2",
+        "id": "238205",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Gloaming Alloy t1",
+        "id": "238202",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Gloaming Alloy t2",
+        "id": "238203",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Refulgent Copper ingot t1",
+        "id": "238197",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Refulgent Copper ingot t2",
+        "id": "238198",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Flawless Harandar Peridot",
+        "id": "242610",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Flawless Tenebrous Amethyst",
+        "id": "242611",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sunfire Silk Bolt t1",
+        "id": "239201",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sunfire Silk Bolt t2",
+        "id": "239201",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Peerless Plumage",
+        "id": "238522",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sunglass Vial t1",
+        "id": "240991",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Sunglass Vial t2",
+        "id": "240990",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t1",
+        "id": "244637",
+        "itemUsed": "5"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t2",
+        "id": "244638",
+        "itemUsed": "5"
+      },
+
+
+
+
+      {
+        "name": "Storm Dust t1",
+        "id": 219946,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Storm Dust t2",
+        "id": 219947,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Storm Dust t3",
+        "id": 219948,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Gleaming Shard t1",
+        "id": 219949,
+        "itemUsed": "22"
+      },
+      {
+        "name": "Gleaming Shard t2",
+        "id": 219950,
+        "itemUsed": "22"
+      },
+      {
+        "name": "Gleaming Shard t3",
+        "id": 219951,
+        "itemUsed": "22"
+      },
+      {
+        "name": "Writhing Sample",
+        "id": 213611,
+        "itemUsed": "11"
+      },
+      {
+        "name": "Ringing Deeps Ingot",
+        "id": 221754,
+        "itemUsed": "7"
+      },
+      {
+        "name": "Bottled Storm",
+        "id": 218338,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Leyline Residue",
+        "id": 213613,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Crystalline Powder",
+        "id": 213610,
+        "itemUsed": "12"
+      },
+      {
+        "name": "Vial of Kaheti Oils",
+        "id": 221756,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Profaned Tinderbox",
+        "id": 221758,
+        "itemUsed": "5"
+      },
+      {
+        "id": 219952,
+        "name": "Refulgent Crystal t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 219954,
+        "name": "Refulgent Crystal t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 219955,
+        "name": "Refulgent Crystal t3",
+        "itemUsed": "25"
+      }
+    ],
+
+
+
+
+
+
+    "JEWELCRAFTING": [
+      {
+        "id": 212495,
+        "name": "Radiant Ruby",
+        "itemUsed": "25"
+      },
+      {
+        "id": 212505,
+        "name": "Extravagant Emerald",
+        "itemUsed": "25"
+      },
+      {
+        "id": 212508,
+        "name": "Stunning Sapphire",
+        "itemUsed": "25"
+      },
+      {
+        "id": 212511,
+        "name": "Ostentatious Onyx",
+        "itemUsed": "25"
+      },
+      {
+        "id": 210939,
+        "name": "Null Stone",
+        "itemUsed": "16"
+      },
+      {
+        "name": "Gleaming Shard t1",
+        "id": 219949,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gleaming Shard t2",
+        "id": 219950,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gleaming Shard t3",
+        "id": 219951,
+        "itemUsed": "8"
+      },
+      {
+        "id": 213399,
+        "name": "Glittering Glass",
+        "itemUsed": "16"
+      },
+      {
+        "id": 213219,
+        "name": "Crushed Gemstones t1",
+        "itemUsed": "32"
+      },
+      {
+        "id": 213220,
+        "name": "Crushed Gemstones t2",
+        "itemUsed": "32"
+      },
+      {
+        "id": 213221,
+        "name": "Crushed Gemstones t3",
+        "itemUsed": "32"
+      },
+      {
+        "id": 212498,
+        "name": "Ambivalent Amber",
+        "itemUsed": "4"
+      },
+      {
+        "id": 213750,
+        "name": "Engraved Gemcutter t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 213751,
+        "name": "Engraved Gemcutter t2",
+        "itemUsed": "4"
+      },
+      {
+        "id": 213752,
+        "name": "Engraved Gemcutter t3",
+        "itemUsed": "4"
+      },
+
+
+
+
+
+      {
+        "id": 237359,
+        "name": "Refulgent Copper Ore t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237361,
+        "name": "Refulgent Copper Ore t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237362,
+        "name": "Umbral Tin Ore t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237363,
+        "name": "Umbral Tin Ore t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237364,
+        "name": "Brilliant Silver Ore t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237365,
+        "name": "Brilliant Silver Ore t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 237366,
+        "name": "Dazzling Thorium",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242788,
+        "name": "Duskshrouded Stone t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242789,
+        "name": "Duskshrouded Stone t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242787,
+        "name": "Crystalline Glass t1",
+        "itemUsed": "12"
+      },
+      {
+        "id": 242786,
+        "name": "Crystalline Glass t2",
+        "itemUsed": "12"
+      },
+      {
+        "id": 242553,
+        "name": "Sanguine Garnet t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242723,
+        "name": "Sanguine Garnet t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242554,
+        "name": "Amani Lapis t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242722,
+        "name": "Amani Lapis t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242606,
+        "name": "Tenebrous Amethyst t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242721,
+        "name": "Tenebrous Amethyst t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242607,
+        "name": "Harandar Peridot t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242720,
+        "name": "Harandar Peridot t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242613,
+        "name": "Flawless Sanguine Garnet t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242724,
+        "name": "Flawless Sanguine Garnet t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242612,
+        "name": "Flawless Amani Lapis t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242727,
+        "name": "Flawless Amani Lapis t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242611,
+        "name": "Flawless Tenebrous Amethyst t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242725,
+        "name": "Flawless Tenebrous Amethyst t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242610,
+        "name": "Flawless Harandar Peridot t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242726,
+        "name": "Flawless Harandar Peridot t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242608,
+        "name": "Eversong Diamond t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242712,
+        "name": "Eversong Diamond t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242620,
+        "name": "Glimmering Gemdust t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 242621,
+        "name": "Glimmering Gemdust t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 240974,
+        "name": "Kaleidoscopic Prism t1",
+        "itemUsed": "12"
+      },
+      {
+        "id": 240975,
+        "name": "Kaleidoscopic Prism t2",
+        "itemUsed": "12"
+      },
+      {
+        "id": 251655,
+        "name": "Silverleaf Thread t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 240972,
+        "name": "Sin'dorei Lens t1",
+        "itemUsed": "12"
+      },
+      {
+        "id": 240973,
+        "name": "Sin'dorei Lens t2",
+        "itemUsed": "12"
+      },
+      {
+        "id": 244637,
+        "name": "Silvermoon Weapon Wrap t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 244638,
+        "name": "Silvermoon Weapon Wrap t2",
+        "itemUsed": "4"
+      },
+      {
+        "id": 238529,
+        "name": "Majestic Hide",
+        "itemUsed": "4"
+      },
+      {
+        "id": 244633,
+        "name": "Infused Scalewoven Hide t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 244634,
+        "name": "Infused Scalewoven Hide t2",
+        "itemUsed": "4"
+      },
+      {
+        "id": 238518,
+        "name": "Void-Tempered Hide t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 238519,
+        "name": "Void-Tempered Hide t2",
+        "itemUsed": "4"
+      },
+      {
+        "id": 236949,
+        "name": "Mote of Light",
+        "itemUsed": "4"
+      },
+      {
+        "id": 236951,
+        "name": "Mote of Wild Magic",
+        "itemUsed": "4"
+      },
+      {
+        "id": 236952,
+        "name": "Mote of Pure Void",
+        "itemUsed": "4"
+      },
+      {
+        "id": 236950,
+        "name": "Mote of Primal Energy",
+        "itemUsed": "4"
+      },
+      {
+        "id": 251283,
+        "name": "Tormented Tantalum",
+        "itemUsed": "4"
+      },
+      {
+        "id": 243605,
+        "name": "Dawn Crystal t1",
+        "itemUsed": "4"
+      },
+      {
+        "id": 243606,
+        "name": "Dawn Crystal t2",
+        "itemUsed": "4"
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "TAILORING": [
+      {
+        "id": 224764,
+        "name": "Mosswool Thread",
+        "itemUsed": "6"
+      },
+      {
+        "id": 222804,
+        "name": "Weavercloth Bolt t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 222805,
+        "name": "Weavercloth Bolt t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 222806,
+        "name": "Weavercloth Bolt t3",
+        "itemUsed": "25"
+      },
+      {
+        "name": "Storm Dust t1",
+        "id": 219946,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Storm Dust t2",
+        "id": 219947,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Storm Dust t3",
+        "id": 219948,
+        "itemUsed": "8"
+      },
+      {
+        "id": 222795,
+        "name": "Spool of Weaverthread t1",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222796,
+        "name": "Spool of Weaverthread t2",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222797,
+        "name": "Spool of Weaverthread t3",
+        "itemUsed": "16"
+      },
+      {
+        "id": 224832,
+        "name": "Exquisite Weavercloth Bolt t1",
+        "itemUsed": "25"
+      },
+      {
+        "id": 224833,
+        "name": "Exquisite Weavercloth Bolt t2",
+        "itemUsed": "25"
+      },
+      {
+        "id": 224834,
+        "name": "Exquisite Weavercloth Bolt t3",
+        "itemUsed": "25"
+      },
+      {
+        "id": 222792,
+        "name": "Spool of Dawnthread t1",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222793,
+        "name": "Spool of Dawnthread t2",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222794,
+        "name": "Spool of Dawnthread t3",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222789,
+        "name": "Spool of Duskthread t1",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222790,
+        "name": "Spool of Duskthread t2",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222791,
+        "name": "Spool of Duskthread t3",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222801,
+        "name": "Dawnweave Bolt t1",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222802,
+        "name": "Dawnweave Bolt t2",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222803,
+        "name": "Dawnweave Bolt t3",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222798,
+        "name": "Duskweave Bolt t1",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222799,
+        "name": "Duskweave Bolt t2",
+        "itemUsed": "16"
+      },
+      {
+        "id": 222800,
+        "name": "Duskweave Bolt t3",
+        "itemUsed": "16"
+      },
+      {
+        "id": 228930,
+        "name": "Adorning Ribbon",
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gleaming Shard t1",
+        "id": 219949,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gleaming Shard t2",
+        "id": 219950,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gleaming Shard t3",
+        "id": 219951,
+        "itemUsed": "8"
+      }
+    ],
+
+
+    "BLACKSMITHING": [
+      {
+        "name": "Sterling Alloy t1",
+        "id": 238204,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Sterling Alloy t2",
+        "id": 238205,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Gloaming Alloy t1",
+        "id": 238202,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Gloaming Alloy t2",
+        "id": 238203,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Refulgent Copper Ingot t1",
+        "id": 238197,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Refulgent Copper Ingot t2",
+        "id": 238198,
+        "itemUsed": "25"
+      },
+      {
+        "name": "Luminant Flux",
+        "id": 243060,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Duskshrouded Stone t1",
+        "id": 242788,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Duskshrouded Stone t2",
+        "id": 242789,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t1",
+        "id": 244637,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t2",
+        "id": 244638,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Sin'dorei Armor Banding t1",
+        "id": 244635,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Sin'dorei Armor Banding t2",
+        "id": 244636,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Claw",
+        "id": 238528,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Refulgent Copper Ore t1",
+        "id": 237359,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Refulgent Copper Ore t2",
+        "id": 237361,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Umbral Tin Ore t1",
+        "id": 237362,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Umbral Tin Ore t2",
+        "id": 237363,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Brilliant Silver Ore t1",
+        "id": 237364,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Brilliant Silver Ore t2",
+        "id": 237365,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Tormented Tantalum",
+        "id": 251283,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Fin",
+        "id": 238530,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Hide",
+        "id": 238529,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Dazzling Thorium",
+        "id": 237366,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Core Alloy t1",
+        "id": 222417,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Core Alloy t2",
+        "id": 222418,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Core Alloy t3",
+        "id": 222419,
+        "itemUsed": "8"
+      }
+    ]
+  }

@@ -1,0 +1,13 @@
+{
+    "ENCHANTING": "linear-gradient(90deg, #3366FF 0%, #8844FF 100%)", 
+    "JEWELCRAFTING": "linear-gradient(90deg, #FF4400 0%, #FFCC00 100%)", 
+    "ALCHEMY": "linear-gradient(90deg, #44FF44 0%, #00AA00 100%)", 
+    "BLACKSMITHING": "linear-gradient(90deg, #888888 0%, #CCCCCC 100%)", 
+    "TAILORING": "linear-gradient(90deg, #6600CC 0%, #CC66FF 100%)", 
+    "LEATHERWORKING": "linear-gradient(90deg, #8B4513 0%, #D2691E 100%)", 
+    "INSCRIPTION": "linear-gradient(90deg, #CCAA00 0%, #FFEE44 100%)", 
+    "ENGINEERING": "linear-gradient(90deg, #FF8800 0%, #FF4400 100%)", 
+    "HERBALISM": "linear-gradient(90deg, #00FF00 0%, #88FF88 100%)", 
+    "MINING": "linear-gradient(90deg, #555555 0%, #999999 100%)", 
+    "SKINNING": "linear-gradient(90deg, #8B0000 0%, #FF4444 100%)" 
+}
