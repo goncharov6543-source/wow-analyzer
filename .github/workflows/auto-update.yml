@@ -1,0 +1,38 @@
+name: Auto-Update WoW Analyzer
+
+# Коли запускати скрипт
+on:
+  schedule:
+    - cron: '0 * * * *' # Запускати кожну годину в 00 хвилин
+  workflow_dispatch: # Дозволяє запускати оновлення вручну кнопкою
+
+# Надаємо права боту на запис у репозиторій
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Використовуємо 18 версію, бо там вбудований fetch
+
+      - name: Run Scraper (index.js)
+        run: node index.js
+        env:
+          CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          # Якщо є зміни, робимо коміт. Якщо ціни не змінилися - скрипт просто піде далі без помилки
+          git commit -m "Auto-update prices and generate HTML" || echo "No changes to commit"
+          git push
