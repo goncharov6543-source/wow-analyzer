@@ -7811,6 +7811,33 @@
                         { "name": "Brilliant Silver Ore t1", "id": "237364", "count": 12},
                         { "name": "Refulgent Copper Ore t1", "id": "237359", "count": 40}
                     ]
+                },
+                {
+                    "item": "Thalassian leatherworker's duffel",
+                    "customIcon": "./profOverviewIcons/ThalassianLeatherworker'sDuffel.jpg",
+                    "color": "#FFA500",
+                    "outputs": [
+                        { "name": "Void-Tempered Leather t1", "id": "238511", "count": 60},
+                        { "name": "Void-Tempered Scales t1", "id": "237364", "count": 60}
+                    ]
+                },
+                {
+                    "item": "Thalassian Tailor's tote bag",
+                    "customIcon": "./profOverviewIcons/ThalassianTailor'sToteBag.jpg",
+                    "color": "#FFA500",
+                    "outputs": [
+                        { "name": "Bright Linen t1", "id": "236963", "count": 60}
+                    ]
+                },
+                {
+                    "item": "BasketOfEversongHerbs",
+                    "customIcon": "./profOverviewIcons/BasketOfEversongHerbs.jpg",
+                    "color": "#FFA500",
+                    "outputs": [
+                        { "name": "Argentleaf t1", "id": "236776", "count": 10},
+                        { "name": "Mana Lily t1", "id": "236778", "count": 20},
+                        { "name": "Tranquility Bloom t1", "id": "236771", "count": 40}
+                    ]
                 }
             ]
         },
