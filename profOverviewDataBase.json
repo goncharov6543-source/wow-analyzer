@@ -7838,6 +7838,15 @@
                         { "name": "Mana Lily t1", "id": "236778", "count": 20},
                         { "name": "Tranquility Bloom t1", "id": "236771", "count": 40}
                     ]
+                },
+                {
+                    "item": "Thalassian enchanter's purse",
+                    "customIcon": "./profOverviewIcons/ThalassianEnchanter'sPurse.jpg",
+                    "color": "#FFA500",
+                    "outputs": [
+                        { "name": "Radiant Shard t1", "id": "243602", "count": 3},
+                        { "name": "Eversinging Dust t1", "id": "243599", "count": 30}
+                    ]
                 }
             ]
         },
