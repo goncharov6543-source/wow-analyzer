@@ -7799,6 +7799,22 @@
 
     "HERBALISM": [
         {
+            "groupName": "quest Crafters needed",
+            "icon": "./profOverviewIcons/Bags.jpg",
+            "recipes": [
+                {
+                    "item": "Collection of eversong minerals",
+                    "customIcon": "./profOverviewIcons/CollectionOfEversongMinerals.jpg",
+                    "color": "#FFA500",
+                    "outputs": [
+                        { "name": "Umbral tin ore t1", "id": "237362", "count": 12},
+                        { "name": "Brilliant Silver Ore t1", "id": "237364", "count": 12},
+                        { "name": "Refulgent Copper Ore t1", "id": "237359", "count": 40}
+                    ]
+                }
+            ]
+        },
+        {
             "groupName": "Herbalism/Mining",
             "icon": "./profOverviewIcons/Herbalism.jpg",
             "recipes": [
