@@ -479,148 +479,118 @@
 
     "TAILORING": [
       {
-        "id": 224764,
-        "name": "Mosswool Thread",
-        "itemUsed": "6"
+        "name": "Sunfire Silk Bolt t1",
+        "id": 239201,
+        "itemUsed": "24"
       },
       {
-        "id": 222804,
-        "name": "Weavercloth Bolt t1",
-        "itemUsed": "25"
+        "name": "Sunfire Silk Bolt t2",
+        "id": 239202,
+        "itemUsed": "24"
       },
       {
-        "id": 222805,
-        "name": "Weavercloth Bolt t2",
-        "itemUsed": "25"
+        "name": "Arcanoweave Bolt t1",
+        "id": 239198,
+        "itemUsed": "24"
       },
       {
-        "id": 222806,
-        "name": "Weavercloth Bolt t3",
-        "itemUsed": "25"
+        "name": "Arcanoweave Bolt t2",
+        "id": 239200,
+        "itemUsed": "24"
       },
       {
-        "name": "Storm Dust t1",
-        "id": 219946,
+        "name": "Arcanoweave t1",
+        "id": 237018,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Arcanoweave t2",
+        "id": 237017,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sunfire Silk t1",
+        "id": 237015,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sunfire Silk t2",
+        "id": 237016,
+        "itemUsed": "24"
+      },
+      {
+        "id": 236949,
+        "name": "Mote of Light",
         "itemUsed": "8"
       },
       {
-        "name": "Storm Dust t2",
-        "id": 219947,
+        "id": 236951,
+        "name": "Mote of Wild Magic",
         "itemUsed": "8"
       },
       {
-        "name": "Storm Dust t3",
-        "id": 219948,
+        "id": 236952,
+        "name": "Mote of Pure Void",
         "itemUsed": "8"
       },
       {
-        "id": 222795,
-        "name": "Spool of Weaverthread t1",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222796,
-        "name": "Spool of Weaverthread t2",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222797,
-        "name": "Spool of Weaverthread t3",
-        "itemUsed": "16"
-      },
-      {
-        "id": 224832,
-        "name": "Exquisite Weavercloth Bolt t1",
-        "itemUsed": "25"
-      },
-      {
-        "id": 224833,
-        "name": "Exquisite Weavercloth Bolt t2",
-        "itemUsed": "25"
-      },
-      {
-        "id": 224834,
-        "name": "Exquisite Weavercloth Bolt t3",
-        "itemUsed": "25"
-      },
-      {
-        "id": 222792,
-        "name": "Spool of Dawnthread t1",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222793,
-        "name": "Spool of Dawnthread t2",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222794,
-        "name": "Spool of Dawnthread t3",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222789,
-        "name": "Spool of Duskthread t1",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222790,
-        "name": "Spool of Duskthread t2",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222791,
-        "name": "Spool of Duskthread t3",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222801,
-        "name": "Dawnweave Bolt t1",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222802,
-        "name": "Dawnweave Bolt t2",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222803,
-        "name": "Dawnweave Bolt t3",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222798,
-        "name": "Duskweave Bolt t1",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222799,
-        "name": "Duskweave Bolt t2",
-        "itemUsed": "16"
-      },
-      {
-        "id": 222800,
-        "name": "Duskweave Bolt t3",
-        "itemUsed": "16"
-      },
-      {
-        "id": 228930,
-        "name": "Adorning Ribbon",
+        "id": 236950,
+        "name": "Mote of Primal Energy",
         "itemUsed": "8"
       },
       {
-        "name": "Gleaming Shard t1",
-        "id": 219949,
+        "name": "Embroidery Floss",
+        "id": 251691,
         "itemUsed": "8"
       },
       {
-        "name": "Gleaming Shard t2",
-        "id": 219950,
+        "name": "Radiant Shard t1",
+        "id": 243602,
         "itemUsed": "8"
       },
       {
-        "name": "Gleaming Shard t3",
-        "id": 219951,
+        "name": "Radiant Shard t2",
+        "id": 243603,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Carving Canine",
+        "id": 238523,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Silverleaf Thread",
+        "id": 251665,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Fantastic Fur",
+        "id": 238525,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Eversinging Dust t1",
+        "id": 243599,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Eversinging Dust t2",
+        "id": 243600,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Petrified Root",
+        "id": 251285,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Tormented Tantalum",
+        "id": 251283,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Peerless Plumage",
+        "id": 238522,
         "itemUsed": "8"
       }
     ],
