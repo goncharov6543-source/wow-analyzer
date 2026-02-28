@@ -57,7 +57,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінг"
                                 },
                                 {
@@ -218,7 +218,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінга"
                                 },
                                 {
@@ -260,10 +260,8 @@
                 { "name": "Crafting Speed", "count": 15 }
             ],
             "reagents": [
-                { "name": "Evercore t1", "id": "243581", "pickCheapestReagent": true, "count": 1 },
-                { "name": "Evercore t2", "id": "243582", "pickCheapestReagent": true, "count": 1 },
-                { "name": "Soul Sprocket t1", "id": "243576", "pickCheapestReagent": true, "count": 1 },
-                { "name": "Soul Sprocket t2", "id": "243577", "pickCheapestReagent": true, "count": 1 }
+                { "name": "Evercore t1", "id": "243581", "count": 1 },
+                { "name": "Soul Sprocket t1", "id": "243576", "count": 1 }
             ],
             "outputs": [
                 { "name": "Eversinging Dust t1", "id": "243599", "count": 0.93},
@@ -380,7 +378,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінг"
                                 },
                                 {
@@ -540,7 +538,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінг"
                                 },
                                 {
@@ -699,7 +697,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінг"
                                 },
                                 {
@@ -868,7 +866,7 @@
                         {
                             "talantes": [
                                 {
-                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                     "note": "сетап талантів на дізенчантінг"
                                 },
                                 {
@@ -1204,13 +1202,80 @@
         "icon": "./profOverviewIcons/GleamingShatter.jpg",
         "recipes": [
             {
+                "item": "Radiant Shard t1",
+                "id": "243602",
+                "color": "#0070dd",
+                "craftTime": 2,
+                "timePenalty": 25,
+                "stats": [
+                    { "name": "Resourcefulness", "count": 11 },
+                    { "name": "Crafting Speed", "count": 15 }
+                ],
+                "reagents": [
+                    { "name": "Radiant Shard t1", "id": "243602", "count": 1 }
+                ],
+                "outputs": [
+                    { "name": "Eversinging Dust t1", "id": "243599", "count": 3}
+                ],
+                "moreInfo": [
+                    {
+                        "header": [
+                            {
+                                "skill": 140
+                            },
+                            {
+                                "tools": [
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory1Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory1Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory2Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory2Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory3Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory3Info.png"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "body": [
+                            {
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                "note": "сетап талантів на шаттер"
+                            }
+                        ]
+                    },
+                    {
+                        "footer": [
+                            {
+                                "buffs": [
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                    },
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
                 "item": "Radiant Shard t2",
                 "id": "243603",
                 "color": "#0070dd",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
-                    { "name": "Resourcefulness", "count": 22 },
+                    { "name": "Resourcefulness", "count": 11 },
                     { "name": "Crafting Speed", "count": 15 }
                 ],
                 "reagents": [
@@ -1248,141 +1313,7 @@
                         "body": [
                             {
                                 "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
-                                "note": "сетап талантів на ifnnthf"
-                            }
-                        ]
-                    },
-                    {
-                        "footer": [
-                            {
-                                "buffs": [
-                                    {
-                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
-                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
-                                    },
-                                    {
-                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
-                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-
-            {
-                "item": "Gleaming Shard t2",
-                "id": "219950",
-                "color": "#0070dd",
-                "craftTime": 2,
-                "timePenalty": 25,
-                "stats": [
-                    { "name": "Resourcefulness", "count": 16 },
-                    { "name": "Crafting Speed", "count": 75 }
-                ],
-                "reagents": [
-                    { "name": "Gleaming Shard t2", "id": "219950", "count": 1 }
-                ],
-                "outputs": [
-                    { "name": "Storm Dust t1", "id": "219946", "count": 1.986},
-                    { "name": "Storm Dust t2", "id": "219947", "count": 1.086}
-                ],
-                "moreInfo": [
-                    {
-                        "header": [
-                            {
-                                "skill": 140
-                            },
-                            {
-                                "tools": [
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory1.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory1Info.jpg"
-                                    },
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory2.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory2Info.png"
-                                    },
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory3.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory3Info.png"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "body": [
-                            {
-                                "talantes": "./profMoreInfoImages/ProspectingTalantes.png"
-                            }
-                        ]
-                    },
-                    {
-                        "footer": [
-                            {
-                                "buffs": [
-                                    {
-                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
-                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
-                                    },
-                                    {
-                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
-                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "item": "Gleaming Shard t3",
-                "id": "219951",
-                "color": "#0070dd",
-                "craftTime": 2,
-                "timePenalty": 25,
-                "stats": [
-                    { "name": "Resourcefulness", "count": 16 },
-                    { "name": "Crafting Speed", "count": 75 }
-                ],
-                "reagents": [
-                    { "name": "Gleaming Shard t3", "id": "219951", "count": 1 }
-                ],
-                "outputs": [
-                    { "name": "Storm Dust t1", "id": "219946", "count": 1.149},
-                    { "name": "Storm Dust t2", "id": "219947", "count": 1.257},
-                    { "name": "Storm Dust t3", "id": "219948", "count": 0.609}
-                ],
-                "moreInfo": [
-                    {
-                        "header": [
-                            {
-                                "skill": 140
-                            },
-                            {
-                                "tools": [
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory1.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory1Info.jpg"
-                                    },
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory2.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory2Info.png"
-                                    },
-                                    {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory3.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory3Info.png"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "body": [
-                            {
-                                "talantes": "./profMoreInfoImages/ProspectingTalantes.png"
+                                "note": "сетап талантів на шаттер"
                             }
                         ]
                     },
