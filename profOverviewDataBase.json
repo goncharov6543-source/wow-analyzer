@@ -51,6 +51,89 @@
         },
 
         {
+            "item": "Courtly Wrists",
+            "id": "239671",
+            "color": "#0070dd",
+            "keepMainIcon": true,
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 25 },
+                { "name": "Crafting Speed", "count": 35 }
+            ],
+            "reagents": [
+                { "name": "Silverleaf Thread", "id": "251665", "count": 2 },
+                { "name": "Bright Linen Bolt t1", "id": "239700", "count": 2 }
+            ],
+            "outputs": [
+                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
+                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
+                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
+                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
+                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
+                { "name": "Bright Linen", "id": "236963", "count": 0.06},
+                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/TailoringDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для тейлора"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
             "item": "Evercore Binding",
             "id": "245342",
             "color": "#0070dd",
