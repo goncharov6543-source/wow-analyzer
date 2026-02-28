@@ -219,7 +219,7 @@
                             "talantes": [
                                 {
                                     "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
-                                    "note": "сетап талантів на дізенчантінг"
+                                    "note": "сетап талантів на дізенчантінга"
                                 },
                                 {
                                     "screen": "./profMoreInfoImages/EngineeringDisenchantingCraftingTalantes1.png",
@@ -573,7 +573,7 @@
         {
             "item": "Hobbyist Rolling Pin",
             "id": "245779",
-            "color": "#0070dd",
+            "color": "#1eff00",
             "craftTime": 2,
             "timePenalty": 25,
             "stats": [
@@ -1204,20 +1204,21 @@
         "icon": "./profOverviewIcons/GleamingShatter.jpg",
         "recipes": [
             {
-                "item": "Gleaming Shard t1",
-                "id": "219949",
+                "item": "Radiant Shard t2",
+                "id": "243603",
                 "color": "#0070dd",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
-                    { "name": "Resourcefulness", "count": 16 },
-                    { "name": "Crafting Speed", "count": 75 }
+                    { "name": "Resourcefulness", "count": 22 },
+                    { "name": "Crafting Speed", "count": 15 }
                 ],
                 "reagents": [
-                    { "name": "Gleaming Shard t1", "id": "219949", "count": 1 }
+                    { "name": "Radiant Shard t2", "id": "243603", "count": 1 }
                 ],
                 "outputs": [
-                    { "name": "Storm Dust t1", "id": "219946", "count": 3}
+                    { "name": "Eversinging Dust t1", "id": "243599", "count": 2.07},
+                    { "name": "Eversinging Dust t2", "id": "243600", "count": 0.93}
                 ],
                 "moreInfo": [
                     {
@@ -1228,16 +1229,16 @@
                             {
                                 "tools": [
                                     {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory1.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory1Info.jpg"
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory1Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory1Info.png"
                                     },
                                     {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory2.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory2Info.png"
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory2Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory2Info.png"
                                     },
                                     {
-                                        "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory3.png",
-                                        "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory3Info.png"
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory3Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory3Info.png"
                                     }
                                 ]
                             }
@@ -1246,7 +1247,8 @@
                     {
                         "body": [
                             {
-                                "talantes": "./profMoreInfoImages/ProspectingTalantes.png"
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                "note": "сетап талантів на ifnnthf"
                             }
                         ]
                     },
