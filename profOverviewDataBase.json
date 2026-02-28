@@ -6,51 +6,6 @@
       "disTime": 1.5,
       "recipes": [
         {
-            "item": "Pioneer's Cloth Cuffs",
-            "id": "222833-521",
-            "color": "#0070dd",
-            "craftTime": 2,
-            "timePenalty": 25,
-            "stats": [
-                { "name": "Resourcefulness", "count": 22 },
-                { "name": "Crafting Speed", "count": 75 }
-            ],
-            "reagents": [
-                { "name": "Mosswool Thread", "count": 2 },
-                { "name": "Weavercloth Bolt t2", "count": 2 }
-            ],
-            "outputs": [
-                { "name": "Gleaming Shard t1", "id": "219949", "count": 0.39},
-                { "name": "Gleaming Shard t2", "id": "219950", "count": 0.59},
-                { "name": "Gleaming Shard t3", "id": "219951", "count": 0.38},
-                { "name": "Stormcharged Leather", "id": "212664", "count": 0.08},
-                { "name": "Bismuth", "id": "210930", "count": 0.08},
-                { "name": "Mycobloom", "id": "210796", "count": 0.07},
-                { "name": "Spool of Weaverthread", "id": "222795", "count": 0.10},
-                { "name": "Gloom Chitin", "id": "212667", "count": 0.05}
-            ]
-        },
-        {
-            "item": "Proficient Blacksmith's Hammer",
-            "id": "222486-564",
-            "color": "#1eff00",
-            "craftTime": 3.5,
-            "timePenalty": 25,
-            "stats": [
-                { "name": "Resourcefulness", "count": 16 },
-                { "name": "Crafting Speed", "count": 30 }
-            ],
-            "reagents": [
-                { "name": "Core Alloy", "id": "222417", "count": 1 }
-            ],
-            "outputs": [
-                { "name": "Storm Dust t1", "id": "219946", "count": 0.55},
-                { "name": "Storm Dust t2", "id": "219947", "count": 0.29},
-                { "name": "Storm Dust t3", "id": "219948", "count": 0.14}
-            ]
-        },
-
-        {
             "item": "Courtly Wrists",
             "id": "239671",
             "color": "#0070dd",
@@ -148,13 +103,8 @@
                 { "name": "Eversinging Dust t1", "id": "243599", "count": 2 }
             ],
             "outputs": [
-                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
-                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
-                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
-                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
-                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
-                { "name": "Bright Linen", "id": "236963", "count": 0.06},
-                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+                { "name": "Eversinging Dust t1", "id": "243599", "count": 0.93},
+                { "name": "Eversinging Dust t2", "id": "243600", "count": 1.75}
             ],
             "moreInfo": [
                 {
@@ -380,17 +330,17 @@
 
         {
             "item": "Scout's Scaled Bracers",
-            "id": "245342",
+            "id": "244589",
             "color": "#0070dd",
             "craftTime": 2,
             "timePenalty": 25,
             "stats": [
-                { "name": "Resourcefulness", "count": 21 },
+                { "name": "Resourcefulness", "resourcefulnessCape": 50, "count": 21 },
                 { "name": "Crafting Speed", "count": 15 }
             ],
             "reagents": [
-                { "name": "Void-Tempered Scales t1", "id": "243513", "count": 20 },
-                { "name": "Void-Tempered Leather t1", "id": "243511", "count": 10 }
+                { "name": "Void-Tempered Scales t1", "id": "238513", "count": 20 },
+                { "name": "Void-Tempered Leather t1", "id": "238511", "count": 10 }
             ],
             "outputs": [
                 { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
@@ -418,7 +368,7 @@
                                     "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory3Info.png"
                                 },
                                 {
-                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2Icon.png",
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2.png",
                                     "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory2Info.png"
                                 }
                             ]
@@ -467,7 +417,7 @@
             "craftTime": 2,
             "timePenalty": 25,
             "stats": [
-                { "name": "Resourcefulness", "count": 21 },
+                { "name": "Resourcefulness", "resourcefulnessCape": 50, "count": 21 },
                 { "name": "Crafting Speed", "count": 15 }
             ],
             "reagents": [
@@ -496,7 +446,7 @@
                                     "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory3Info.png"
                                 },
                                 {
-                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2Icon.png",
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2.png",
                                     "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory2Info.png"
                                 }
                             ]
@@ -514,6 +464,332 @@
                                 {
                                     "screen": "./profMoreInfoImages/LeatherDisenchantingCraftingTalantes1.png",
                                     "note": "сетап талантів на крафт шмоток для лезерворкера"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Floratender's Crutch",
+            "id": "245772",
+            "color": "#0070dd",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 28 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Thalassian Songwater", "id": "245882", "count": 1 },
+                { "name": "Azeroot t1", "id": "236774", "count": 8 }
+            ],
+            "outputs": [
+                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
+                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
+                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
+                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
+                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
+                { "name": "Bright Linen", "id": "236963", "count": 0.06},
+                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory2Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory3Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/InscriptionDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для інскріптора"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Hobbyist Rolling Pin",
+            "id": "245779",
+            "color": "#0070dd",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 28 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Azeroot t1", "id": "236774", "count": 10 },
+                { "name": "Sienna Ink t1", "id": "245805", "count": 1 }
+            ],
+            "outputs": [
+                { "name": "Eversinging Dust t1", "id": "243599", "count": 0.93},
+                { "name": "Eversinging Dust t2", "id": "243600", "count": 1.75}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory2Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/InscriptionAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/InscriptionAccessory3Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/InscriptionDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для інскріптора"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Gloaming Copper Band",
+            "id": "240947",
+            "color": "#0070dd",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 29 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Refulgent Copper Ore t1", "id": "237359", "count": 5 },
+                { "name": "Duskshrouded Stone t1", "id": "242778", "count": 1 }
+            ],
+            "outputs": [
+                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
+                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
+                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
+                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
+                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
+                { "name": "Bright Linen", "id": "236963", "count": 0.06},
+                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory2Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory3Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/JewelcraftingDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для джевелкрафтінга"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/JewelcraftingDisenchantingTalantes2.png",
+                                    "note": "сетап талантів на крафт шмоток для джевелкрафтінга"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Fantastic Font Focuser",
+            "id": "240954",
+            "color": "#1eff00",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 29 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Sin'dorei Lens t1", "id": "240972", "count": 1 },
+                { "name": "Duskshrouded Stone t1", "id": "242778", "count": 2 }
+            ],
+            "outputs": [
+                { "name": "Eversinging Dust t1", "id": "243599", "count": 0.93},
+                { "name": "Eversinging Dust t2", "id": "243600", "count": 1.75}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory2Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/JewelcraftingAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/JewelcraftingAccessory3Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/JewelcraftingDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для джевелкрафтінга"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/JewelcraftingDisenchantingTalantes3.png",
+                                    "note": "сетап талантів на крафт шмоток для джевелкрафтінга"
                                 }
                             ]
                         }
