@@ -626,6 +626,10 @@
     ],
 
 
+
+
+
+
     "BLACKSMITHING": [
       {
         "name": "Sterling Alloy t1",
@@ -760,6 +764,223 @@
       {
         "name": "Core Alloy t3",
         "id": 222419,
+        "itemUsed": "8"
+      }
+    ],
+
+
+
+
+
+    "LEATHERWORKING": [
+      {
+        "name": "Void-Tempered Scales t1",
+        "id": 238513,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Void-Tempered Scales t2",
+        "id": 238514,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Void-Tempered Leather t1",
+        "id": 238511,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Void-Tempered Leather t2",
+        "id": 238512,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Scalewoven Hide t1",
+        "id": 244631,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Scalewoven Hide t2",
+        "id": 244632,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Void-Tempered Hide t1",
+        "id": 238518,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Void-Tempered Hide t2",
+        "id": 238519,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Infused Scalewoven Hide t1",
+        "id": 244633,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Infused Scalewoven Hide t2",
+        "id": 244634,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Tranquility Bloom t1",
+        "id": 236761,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Tranquility Bloom t2",
+        "id": 236767,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Aetherlume t1",
+        "id": 243578,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Aetherlume t2",
+        "id": 243579,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gloaming Alloy t1",
+        "id": 238202,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Gloaming Alloy t2",
+        "id": 238203,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Nocturnal Lotus",
+        "id": 236780,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Composite Flora t1",
+        "id": 241281,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Composite Flora t2",
+        "id": 241280,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Glimmering Gemdust t1",
+        "id": 242620,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Glimmering Gemdust t2",
+        "id": 242621,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Void-Tempered Plating t1",
+        "id": 238520,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Void-Tempered Plating t2",
+        "id": 238521,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sin'dorei Armor Banding t1",
+        "id": 244635,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Sin'dorei Armor Banding t2",
+        "id": 244636,
+        "itemUsed": "16"
+      },
+      {
+        "id": 236949,
+        "name": "Mote of Light",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236951,
+        "name": "Mote of Wild Magic",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236952,
+        "name": "Mote of Pure Void",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236950,
+        "name": "Mote of Primal Energy",
+        "itemUsed": "8"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t1",
+        "id": 244637,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Silvermoon Weapon Wrap t2",
+        "id": 244638,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Majestic Hide",
+        "id": 238529,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Fantastic Ful",
+        "id": 238525,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Carving Canine",
+        "id": 238523,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Majestic Claw",
+        "id": 238528,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Silverleaf Thread",
+        "id": 251665,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Fin",
+        "id": 238530,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Peerless Plumage",
+        "id": 238522,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Tormented Tantalum",
+        "id": 251283,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Petrified Root",
+        "id": 251285,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Duskshrouded Stone t1",
+        "id": 242788,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Duskshrouded Stone t2",
+        "id": 242789,
         "itemUsed": "8"
       }
     ]

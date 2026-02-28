@@ -580,7 +580,7 @@ const ProfOverview = {
                 
                 if (groupTitle.includes(term) || profBadge.includes(term)) {
                     row.style.display = '';
-                    if(detailsRow && row.classList.contains('show')) detailsRow.style.display = ''; 
+                    if(detailsRow) detailsRow.style.display = ''; // Завжди очищаємо інлайн-стиль, щоб CSS керував видимістю
                 } else {
                     row.style.display = 'none';
                     if(detailsRow) detailsRow.style.display = 'none';
@@ -788,7 +788,7 @@ const ProfOverview = {
                                 if (sName.includes('resourcefulness')) {
                                     let currentResSaving = 0;
                                     let resCapeFactor = stat.resourcefulnessCape !== undefined ? (stat.resourcefulnessCape / 100) : null;
-                                    const finalPenalty = stat.statPenalty !== undefined ? stat.statPenalty : 1.0;
+                                    const finalPenalty = stat.statPenalty !== undefined ? (stat.statPenalty / 100) : 1.0;
 
                                     activeReagentsForStats.forEach(reg => {
                                         const returnFactor = resCapeFactor !== null ? resCapeFactor : ((reg.count === 1) ? 1.0 : 0.5);
@@ -800,14 +800,14 @@ const ProfOverview = {
                                 }
                                 
                                 if (sName.includes('multicraft')) {
-                                    const finalPenalty = stat.statPenalty !== undefined ? stat.statPenalty : 0.8;
+                                    const finalPenalty = stat.statPenalty !== undefined ? (stat.statPenalty / 100) : 0.8;
                                     const mBonus = stat.multiBonus !== undefined ? stat.multiBonus : MULTI_BONUS_VAL;
                                     const extra = ((stat.count / 100) * mBonus * totalRevenue) * finalPenalty; 
                                     if (extra > 0) bonusRows += `<div class="stat-row"><span>Multicraft (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
                                 }
 
                                 if (sName.includes('ingenuity')) {
-                                    const finalPenalty = stat.statPenalty !== undefined ? stat.statPenalty : 0.8;
+                                    const finalPenalty = stat.statPenalty !== undefined ? (stat.statPenalty / 100) : 0.8;
                                     const extra = ((stat.count / 100) * (profName.toUpperCase().includes("ENCHANTING") ? 1.0 : 0.5) * totalRevenue) * finalPenalty;
                                     if (extra > 0) bonusRows += `<div class="stat-row"><span>Ingenuity (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
                                 }
