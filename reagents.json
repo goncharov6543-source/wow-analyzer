@@ -479,6 +479,36 @@
 
     "TAILORING": [
       {
+        "name": "Bright Linen t1",
+        "id": 236963,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Bright Linen t2",
+        "id": 236965,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Bright Linen Bolt t1",
+        "id": 239700,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Bright Linen Bolt t2",
+        "id": 239701,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Imbued Bright Linen Bolt t1",
+        "id": 239702,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Imbued Bright Linen Bolt t2",
+        "id": 239703,
+        "itemUsed": "24"
+      },
+      {
         "name": "Sunfire Silk Bolt t1",
         "id": 239201,
         "itemUsed": "24"
