@@ -54,7 +54,6 @@
             "item": "Courtly Wrists",
             "id": "239671",
             "color": "#0070dd",
-            "keepMainIcon": true,
             "craftTime": 2,
             "timePenalty": 25,
             "stats": [
@@ -64,6 +63,89 @@
             "reagents": [
                 { "name": "Silverleaf Thread", "id": "251665", "count": 2 },
                 { "name": "Bright Linen Bolt t1", "id": "239700", "count": 2 }
+            ],
+            "outputs": [
+                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
+                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
+                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
+                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
+                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
+                { "name": "Bright Linen", "id": "236963", "count": 0.06},
+                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/TailoringDisenchantingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для тейлора"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Chef's Bright Linen Cooking Chapeau",
+            "id": "239642",
+            "color": "#1eff00",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 25 },
+                { "name": "Crafting Speed", "count": 35 }
+            ],
+            "reagents": [
+                { "name": "Silverleaf Thread", "id": "251665", "count": 3 },
+                { "name": "Imbued Bright Linen Bolt t1", "id": "239702", "count": 2 },
+                { "name": "Eversinging Dust t1", "id": "243599", "count": 2 }
             ],
             "outputs": [
                 { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
@@ -272,6 +354,166 @@
                                 {
                                     "screen": "./profMoreInfoImages/EngineeringDisenchantingCraftingTalantes1.png",
                                     "note": "сетап талантів на крафт шмоток для інженера"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Scout's Scaled Bracers",
+            "id": "245342",
+            "color": "#0070dd",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 21 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Void-Tempered Scales t1", "id": "243513", "count": 20 },
+                { "name": "Void-Tempered Leather t1", "id": "243511", "count": 10 }
+            ],
+            "outputs": [
+                { "name": "Radiant Shard t1", "id": "243602", "count": 0.5},
+                { "name": "Radiant Shard t2", "id": "243603", "count": 0.76},
+                { "name": "Void-Tempered Leather", "id": "238511", "count": 0.04},
+                { "name": "Void-Tempered Scales", "id": "238513", "count": 0.06},
+                { "name": "Refulgent Copper Ore", "id": "237359", "count": 0.06},
+                { "name": "Bright Linen", "id": "236963", "count": 0.06},
+                { "name": "Tranquility Bloom", "id": "236761", "count": 0.03}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory3Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2Icon.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory2Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/LeatherDisenchantingCraftingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для лезерворкера"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "footer": [
+                        {
+                            "buffs": [
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                },
+                                {
+                                    "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                    "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "item": "Hideworker's Cover",
+            "id": "244619",
+            "color": "#1eff00",
+            "craftTime": 2,
+            "timePenalty": 25,
+            "stats": [
+                { "name": "Resourcefulness", "count": 21 },
+                { "name": "Crafting Speed", "count": 15 }
+            ],
+            "reagents": [
+                { "name": "Silverleaf Thread", "id": "251665", "count": 10 },
+                { "name": "Void-Tempered Scales t1", "id": "243513", "count": 20 },
+                { "name": "Void-Tempered Leather t1", "id": "243511", "count": 20 }
+            ],
+            "outputs": [
+                { "name": "Eversinging Dust t1", "id": "243599", "count": 0.93},
+                { "name": "Eversinging Dust t2", "id": "243600", "count": 1.75}
+            ],
+            "moreInfo": [
+                {
+                    "header": [
+                        {
+                            "skill": 140
+                        },
+                        {
+                            "tools": [
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory1.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory1Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory3.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory3Info.png"
+                                },
+                                {
+                                    "iconAccessory1": "./profMoreInfoImages/LeatherworkingAccessory2Icon.png",
+                                    "iconAccessory1Info": "./profMoreInfoImages/LeatherworkingAccessory2Info.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "talantes": [
+                                {
+                                    "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                    "note": "сетап талантів на дізенчантінг"
+                                },
+                                {
+                                    "screen": "./profMoreInfoImages/LeatherDisenchantingCraftingTalantes1.png",
+                                    "note": "сетап талантів на крафт шмоток для лезерворкера"
                                 }
                             ]
                         }
