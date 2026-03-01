@@ -2,9 +2,9 @@ const ReagentsScanner = {
     isInit: false,
     chartObserver: null,
 
-    // --- ДОДАНО: Змінні для пагінації ---
     currentPage: 0,
     itemsPerPage: 3,
+    isAnimating: false, // ДОДАНО: Запобіжник для плавної анімації
 
     init: function() {
         if (this.isInit) return;
@@ -12,34 +12,51 @@ const ReagentsScanner = {
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Smooth Charts & Tier Icons Scaled & Pagination)");
+        console.log("🧪 Reagents Scanner Initialized (Smooth Pagination & Hitboxes)");
     },
 
-    // --- ДОДАНО: Логіка перемикання сторінок ---
+    // --- ОНОВЛЕНО: Логіка перемикання з анімацією ---
     changePage: function(dir) {
-        if (typeof REAGENTS_DB === 'undefined') return;
+        if (this.isAnimating || typeof REAGENTS_DB === 'undefined') return;
         const totalPages = Math.ceil(Object.keys(REAGENTS_DB).length / this.itemsPerPage);
         
         this.currentPage += dir;
-        if (this.currentPage < 0) this.currentPage = totalPages - 1; // Кругова прокрутка назад
-        if (this.currentPage >= totalPages) this.currentPage = 0;    // Кругова прокрутка вперед
+        if (this.currentPage < 0) this.currentPage = totalPages - 1; 
+        if (this.currentPage >= totalPages) this.currentPage = 0;    
         
-        this.render();
+        this.triggerSmoothRender();
     },
 
     goToPage: function(idx) {
+        if (this.isAnimating || this.currentPage === idx) return; 
         this.currentPage = idx;
-        this.render();
+        this.triggerSmoothRender();
     },
 
-    // --- ДОДАНО: Генерація HTML пагінації ---
+    triggerSmoothRender: function() {
+        const grid = document.querySelector('.prof-grid-wrapper');
+        if (grid) {
+            this.isAnimating = true;
+            // Плавно приховуємо старий контент
+            grid.style.opacity = '0';
+            grid.style.transform = 'translateY(10px) scale(0.99)';
+            
+            // Чекаємо 150мс і рендеримо новий (який сам плавно з'явиться через CSS)
+            setTimeout(() => {
+                this.render();
+                this.isAnimating = false;
+            }, 150);
+        } else {
+            this.render();
+        }
+    },
+
     generatePaginationHtml: function(allProfs, totalPages) {
-        if (totalPages <= 1) return ''; // Якщо сторінка лише одна, ховаємо пагінацію
+        if (totalPages <= 1) return ''; 
 
         let barsHtml = '';
         for (let i = 0; i < totalPages; i++) {
             const start = i * this.itemsPerPage;
-            // Збираємо назви професій для цієї сторінки, щоб показати в підказці
             const profsOnPage = allProfs.slice(start, start + this.itemsPerPage).map(p => p[0]).join(', ');
             const activeClass = i === this.currentPage ? 'active' : '';
 
@@ -60,8 +77,6 @@ const ReagentsScanner = {
     injectStyles: function() {
         const style = document.createElement('style');
         style.innerHTML = `
-            /* ... (SAME STYLES) ... */
-            .prof-grid-wrapper { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; }
             .prof-section { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: #151515; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; }
             .prof-header { padding: 12px; font-size: 16px; letter-spacing: 1px; text-shadow: 0 2px 2px rgba(0,0,0,0.5); text-align: center; text-transform: uppercase; font-weight: bold; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.05); }
             .reagent-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; padding: 12px; grid-auto-flow: dense; }
@@ -95,12 +110,7 @@ const ReagentsScanner = {
             .trend-down { color: #ff4444; }
             .trend-neutral { color: #666; }
 
-            .q-icon { 
-                width: 1.1em; 
-                height: 1.1em; 
-                margin-left: 4px; 
-                vertical-align: -0.2em;
-            }
+            .q-icon { width: 1.1em; height: 1.1em; margin-left: 4px; vertical-align: -0.2em; }
 
             @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
             .modal-box { animation: modalFadeIn 0.25s ease-out forwards; }
@@ -121,7 +131,18 @@ const ReagentsScanner = {
             .dot-price { width: 8px; height: 8px; background: #0070dd; border-radius: 50%; }
             .dot-qty { width: 8px; height: 8px; background: #ff8800; border-radius: 50%; }
 
-            /* --- ДОДАНО: СТИЛІ ПАГІНАЦІЇ --- */
+            /* --- ОНОВЛЕНО: АНІМАЦІЯ БЛОКУ --- */
+            @keyframes smoothPageLoad {
+                from { opacity: 0; transform: translateY(10px) scale(0.99); }
+                to { opacity: 1; transform: translateY(0) scale(1); }
+            }
+            .prof-grid-wrapper { 
+                display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
+                transition: opacity 0.15s ease, transform 0.15s ease;
+                animation: smoothPageLoad 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            }
+
+            /* --- ОНОВЛЕНО: СТИЛІ ПАГІНАЦІЇ З ХІТБОКСАМИ --- */
             .reagents-pagination {
                 display: flex; align-items: center; justify-content: center;
                 width: 50%; margin: 0 auto 25px auto; gap: 15px;
@@ -134,28 +155,33 @@ const ReagentsScanner = {
             .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
             
             .pag-bars-container {
-                display: flex; gap: 8px; flex-grow: 1; height: 16px; align-items: center;
+                display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; /* Висота контейнера 24px */
             }
             .pag-bar {
-                flex-grow: 1; height: 3px; background: #333; border-radius: 2px; 
-                cursor: pointer; transition: all 0.2s ease; position: relative;
+                flex-grow: 1; height: 100%; /* Хітбокс бере всі 24px висоти */
+                cursor: pointer; position: relative;
+                display: flex; align-items: center; justify-content: center;
             }
-            .pag-bar.active { background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
             
-            /* Ефект при наведенні */
-            .pag-bar:hover { height: 7px; background: #888; }
-            .pag-bar.active:hover { background: #ffea00; }
+            /* Сама тонка смужка (малюється всередині хітбоксу) */
+            .pag-bar::before {
+                content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px;
+                transition: all 0.2s ease;
+            }
+            .pag-bar.active::before { background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+            .pag-bar:hover::before { background: #888; }
+            .pag-bar.active:hover::before { background: #ffea00; }
 
             /* Тултип з назвами професій */
             .pag-bar::after {
                 content: attr(data-profs);
-                position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%);
+                position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%);
                 background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px;
                 border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444;
                 opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10;
-                pointer-events: none; letter-spacing: 0.5px;
+                pointer-events: none; letter-spacing: 0.5px; margin-bottom: 5px;
             }
-            .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 150%; }
+            .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 100%; }
         `;
         document.head.appendChild(style);
     },
@@ -198,21 +224,17 @@ const ReagentsScanner = {
             return;
         }
 
-        // --- ДОДАНО: Логіка нарізання масиву для сторінок ---
         const allProfs = Object.entries(REAGENTS_DB);
         const totalPages = Math.ceil(allProfs.length / this.itemsPerPage);
 
-        // Перевірка на випадок якщо ми були на 3-й сторінці, а дані оновились і тепер сторінок лише 2
         if (this.currentPage >= totalPages && totalPages > 0) this.currentPage = totalPages - 1;
 
         const startIdx = this.currentPage * this.itemsPerPage;
         const pageProfs = allProfs.slice(startIdx, startIdx + this.itemsPerPage);
 
-        // Додаємо пагінацію нагору
         let html = this.generatePaginationHtml(allProfs, totalPages);
         html += '<div class="prof-grid-wrapper">';
 
-        // Тепер перебираємо тільки pageProfs (3 професії)
         for (const [profName, items] of pageProfs) {
             const headerColor = (typeof PROF_COLORS !== 'undefined' && PROF_COLORS[profName]) 
                 ? PROF_COLORS[profName] : 'linear-gradient(90deg, #333, #555)';
