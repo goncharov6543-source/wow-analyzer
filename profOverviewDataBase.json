@@ -1244,7 +1244,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/disenchantingTalantes1.png",
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -1312,7 +1312,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/disenchantingTalantes1.png",
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -8467,6 +8467,78 @@
 
 
     "HERBALISM": [
+        {
+            "groupName": "Moxie Bags (600 moxie)",
+            "icon": "./profOverviewIcons/Bags.jpg",
+            "recipes": [
+                {
+                    "item": "Master Alchemist's Surplus Reagents",
+                    "customIcon": "./profOverviewIcons/AlchemyMoxieBag.jpg",
+                    "color": "#0070dd",
+                    "outputs": [
+                        { "name": "Tranquility Bloom t2", "id": "236767", "count": 35.1},
+                        { "name": "Sanguithorn t2", "id": "236771", "count": 17.7},
+                        { "name": "Azeroot t2", "id": "236775", "count": 17.6},
+                        { "name": "Mana Lily t2", "id": "236779", "count": 17},
+                        { "name": "Argentleaf t2", "id": "236777", "count": 17.9},
+                        { "name": "Nocturnal Lotus", "id": "236780", "count": 3.3},
+                        { "name": "Petrified Root", "id": "251285", "count": 1}
+                    ]
+                },
+                {
+                    "item": "Master Smith's Surplus Reagents",
+                    "customIcon": "./profOverviewIcons/BlacksmithingMoxieBag.jpg",
+                    "color": "#0070dd",
+                    "outputs": [
+                        { "name": "Refulgent Copper Ore t2", "id": "237361", "count": 44.5},
+                        { "name": "Umbral Tin Ore t2", "id": "237363", "count": 23.5},
+                        { "name": "Brilliant Silver Ore t2", "id": "237365", "count": 24.8},
+                        { "name": "Dazzling Thorium", "id": "237366", "count": 7.8},
+                        { "name": "Petrified Root", "id": "251285", "count": 1}
+                    ]
+                },
+                {
+                    "item": "Master Leatherworker's Surplus Reagents",
+                    "customIcon": "./profOverviewIcons/AlchemyMoxieBag.jpg",
+                    "color": "#0070dd",
+                    "outputs": [
+                        { "name": "Void-Tempered Hide t2", "id": "238519", "count": 4.2},
+                        { "name": "Void-Tempered Plating t2", "id": "238521", "count": 4.3},
+                        { "name": "Void-Tempered Leather t2", "id": "238512", "count": 35.7},
+                        { "name": "Void-Tempered Scales t2", "id": "238514", "count": 33.7},
+                        { "name": "Majestic Claw", "id": "238528", "count": 1.3},
+                        { "name": "Majestic Hide", "id": "238529", "count": 1.5},
+                        { "name": "Majestic Fin", "id": "238530", "count": 1.4},
+                        { "name": "Peerless Plumage", "id": "238522", "count": 5.9},
+                        { "name": "Carving Canine", "id": "238523", "count": 5.6},
+                        { "name": "Fantastic Fur", "id": "238525", "count": 5.7},
+                        { "name": "Petrified Root", "id": "251285", "count": 1}
+                    ]
+                },
+                {
+                    "item": "Master Tailor's Surplus Reagents",
+                    "customIcon": "./profOverviewIcons/AlchemyMoxieBag.jpg",
+                    "color": "#0070dd",
+                    "outputs": [
+                        { "name": "Bright Linen t2", "id": "236965", "count": 10.8},
+                        { "name": "Arcanoweave t2", "id": "237017", "count": 5.1},
+                        { "name": "Sunfire Silk t2", "id": "237016", "count": 4.8},
+                        { "name": "Petrified Root", "id": "251285", "count": 1}
+                    ]
+                },
+                {
+                    "item": "Master Enchanter's Surplus Reagents",
+                    "customIcon": "./profOverviewIcons/AlchemyMoxieBag.jpg",
+                    "color": "#0070dd",
+                    "outputs": [
+                        { "name": "Eversinging Dust t2", "id": "243600", "count": 61.2},
+                        { "name": "Radiant Shard t2", "id": "243603", "count": 25.5},
+                        { "name": "Dawn Crystal t2", "id": "243606", "count": 7.7},
+                        { "name": "Petrified Root", "id": "251285", "count": 1}
+                    ]
+                }
+            ]
+        },
         {
             "groupName": "quest Crafters needed",
             "icon": "./profOverviewIcons/Bags.jpg",
