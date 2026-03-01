@@ -2,7 +2,7 @@
     "ENCHANTING": [
     {
       "groupName": "Disenchanting",
-      "icon": "./profOverviewIcons/Disenchanting.jpg",
+      "icon": "./profOverviewIcons/disenchanting.jpg",
       "disTime": 1.5,
       "recipes": [
         {
@@ -1313,6 +1313,141 @@
                         "body": [
                             {
                                 "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                "note": "сетап талантів на шаттер"
+                            }
+                        ]
+                    },
+                    {
+                        "footer": [
+                            {
+                                "buffs": [
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                    },
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "item": "Dawn Crystal t1",
+                "id": "243605",
+                "color": "#0070dd",
+                "craftTime": 2,
+                "timePenalty": 25,
+                "stats": [
+                    { "name": "Resourcefulness", "count": 11 },
+                    { "name": "Crafting Speed", "count": 15 }
+                ],
+                "reagents": [
+                    { "name": "Dawn Crystal t1", "id": "243605", "count": 1 }
+                ],
+                "outputs": [
+                    { "name": "Radiant Shard t1", "id": "243602", "count": 3}
+                ],
+                "moreInfo": [
+                    {
+                        "header": [
+                            {
+                                "skill": 140
+                            },
+                            {
+                                "tools": [
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory1Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory1Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory2Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory2Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory3Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory3Info.png"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "body": [
+                            {
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
+                                "note": "сетап талантів на шаттер"
+                            }
+                        ]
+                    },
+                    {
+                        "footer": [
+                            {
+                                "buffs": [
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                    },
+                                    {
+                                        "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                        "buff1Info": "./profMoreInfoImages/ProspectingBuff2Info.png" 
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "item": "Dawn Crystal t2",
+                "id": "243606",
+                "color": "#0070dd",
+                "craftTime": 2,
+                "timePenalty": 25,
+                "stats": [
+                    { "name": "Resourcefulness", "count": 11 },
+                    { "name": "Crafting Speed", "count": 15 }
+                ],
+                "reagents": [
+                    { "name": "Dawn Crystal t2", "id": "243606", "count": 1 }
+                ],
+                "outputs": [
+                    { "name": "Radiant Shard t1", "id": "243602", "count": 0.93},
+                    { "name": "Radiant Shard t2", "id": "243603", "count": 2.07}
+                ],
+                "moreInfo": [
+                    {
+                        "header": [
+                            {
+                                "skill": 140
+                            },
+                            {
+                                "tools": [
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory1Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory1Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory2Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory2Info.png"
+                                    },
+                                    {
+                                        "iconAccessory1": "./profMoreInfoImages/EnchantingAccessory3Icon.png",
+                                        "iconAccessory1Info": "./profMoreInfoImages/EnchantingAccessory3Info.png"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "body": [
+                            {
+                                "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
