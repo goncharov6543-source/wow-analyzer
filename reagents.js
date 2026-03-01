@@ -4,7 +4,7 @@ const ReagentsScanner = {
 
     currentPage: 0,
     itemsPerPage: 3,
-    isAnimating: false, // ДОДАНО: Запобіжник для плавної анімації
+    isAnimating: false,
 
     init: function() {
         if (this.isInit) return;
@@ -12,10 +12,9 @@ const ReagentsScanner = {
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Smooth Pagination & Hitboxes)");
+        console.log("🧪 Reagents Scanner Initialized (Smooth Pagination & Hitboxes - Slowed Down)");
     },
 
-    // --- ОНОВЛЕНО: Логіка перемикання з анімацією ---
     changePage: function(dir) {
         if (this.isAnimating || typeof REAGENTS_DB === 'undefined') return;
         const totalPages = Math.ceil(Object.keys(REAGENTS_DB).length / this.itemsPerPage);
@@ -37,15 +36,14 @@ const ReagentsScanner = {
         const grid = document.querySelector('.prof-grid-wrapper');
         if (grid) {
             this.isAnimating = true;
-            // Плавно приховуємо старий контент
             grid.style.opacity = '0';
             grid.style.transform = 'translateY(10px) scale(0.99)';
             
-            // Чекаємо 150мс і рендеримо новий (який сам плавно з'явиться через CSS)
+            // Збільшено в 2.5 рази: 150 * 2.5 = 375мс
             setTimeout(() => {
                 this.render();
                 this.isAnimating = false;
-            }, 150);
+            }, 375);
         } else {
             this.render();
         }
@@ -131,18 +129,17 @@ const ReagentsScanner = {
             .dot-price { width: 8px; height: 8px; background: #0070dd; border-radius: 50%; }
             .dot-qty { width: 8px; height: 8px; background: #ff8800; border-radius: 50%; }
 
-            /* --- ОНОВЛЕНО: АНІМАЦІЯ БЛОКУ --- */
+            /* --- АНІМАЦІЯ БЛОКУ (ЗБІЛЬШЕНО У 2.5 РАЗИ) --- */
             @keyframes smoothPageLoad {
                 from { opacity: 0; transform: translateY(10px) scale(0.99); }
                 to { opacity: 1; transform: translateY(0) scale(1); }
             }
             .prof-grid-wrapper { 
                 display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
-                transition: opacity 0.15s ease, transform 0.15s ease;
-                animation: smoothPageLoad 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+                transition: opacity 0.375s ease, transform 0.375s ease;
+                animation: smoothPageLoad 0.625s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
             }
 
-            /* --- ОНОВЛЕНО: СТИЛІ ПАГІНАЦІЇ З ХІТБОКСАМИ --- */
             .reagents-pagination {
                 display: flex; align-items: center; justify-content: center;
                 width: 50%; margin: 0 auto 25px auto; gap: 15px;
@@ -155,15 +152,14 @@ const ReagentsScanner = {
             .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
             
             .pag-bars-container {
-                display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; /* Висота контейнера 24px */
+                display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center;
             }
             .pag-bar {
-                flex-grow: 1; height: 100%; /* Хітбокс бере всі 24px висоти */
+                flex-grow: 1; height: 100%;
                 cursor: pointer; position: relative;
                 display: flex; align-items: center; justify-content: center;
             }
             
-            /* Сама тонка смужка (малюється всередині хітбоксу) */
             .pag-bar::before {
                 content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px;
                 transition: all 0.2s ease;
@@ -172,7 +168,6 @@ const ReagentsScanner = {
             .pag-bar:hover::before { background: #888; }
             .pag-bar.active:hover::before { background: #ffea00; }
 
-            /* Тултип з назвами професій */
             .pag-bar::after {
                 content: attr(data-profs);
                 position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%);
