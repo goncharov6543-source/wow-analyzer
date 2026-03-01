@@ -1244,7 +1244,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                "screen": "./profMoreInfoImages/disenchantingTalantes1.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -1312,7 +1312,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/DisenchantingTalantes1.png",
+                                "screen": "./profMoreInfoImages/disenchantingTalantes1.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -1339,7 +1339,7 @@
             {
                 "item": "Dawn Crystal t1",
                 "id": "243605",
-                "color": "#0070dd",
+                "color": "#E5E4E2",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
@@ -1379,7 +1379,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
+                                "screen": "./profMoreInfoImages/disenchantingTalantes2.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -1406,7 +1406,7 @@
             {
                 "item": "Dawn Crystal t2",
                 "id": "243606",
-                "color": "#0070dd",
+                "color": "#E5E4E2",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
@@ -1447,7 +1447,7 @@
                     {
                         "body": [
                             {
-                                "screen": "./profMoreInfoImages/DisenchantingTalantes2.png",
+                                "screen": "./profMoreInfoImages/disenchantingTalantes2.png",
                                 "note": "сетап талантів на шаттер"
                             }
                         ]
@@ -9748,7 +9748,96 @@
             ]
         }
     ],
-    "TAILORING": [],
+
+
+
+
+
+
+
+    "TAILORING": [
+        {
+            "groupName": "Embroidered Bags",
+            "icon": "./profOverviewIcons/EmbroideredBags.jpg",
+            "recipes": [
+                {
+                    "item": "Sunfire Silk Backpack",
+                    "id": "240161",
+                    "color": "#E5E4E2",
+                    "craftTime": 2,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 22, "resourcefulnessCape": 60 },
+                        { "name": "Crafting Speed", "count": 31 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 2 },
+                        { "name": "Mote of Pri,al Energy", "id": "236950", "count": 6 },
+                        { "name": "Sunfire Silk Bolt t1", "id": "239201", "count": 10 },
+                        { "name": "Sunfire Silk t1", "id": "237015", "count": 32 }
+                    ],
+                    "outputs": [
+                        { "name": "Sunfire Silk Backpack", "id": "240161", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingBagsTalantes1.png",
+                                            "note": "центральний талант не критичний, за останній нод дають 15% крафт спіда"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+
+            ]
+        }
+    ],
     "LEATHERWORKING": [],
     "MINING": [],
     "SKINNING": []
