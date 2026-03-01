@@ -9997,7 +9997,7 @@
                         { "name": "Bright Linen Bolt t1", "id": "239700", "count": 8 }
                     ],
                     "outputs": [
-                        { "name": "Imbued Bright Linen Backpack", "id": "240160", "count": 1}
+                        { "name": "Bright Linen Reagent Satchel", "id": "240159", "count": 1}
                     ],
                     "moreInfo": [
                         {
@@ -10030,6 +10030,240 @@
                                         {
                                             "screen": "./profMoreInfoImages/TailoringCraftingBagsTalantes1.png",
                                             "note": "центральний талант не критичний, за останній нод дають 15% крафт спіда"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "groupName": "Spellthread",
+            "icon": "./profOverviewIcons/Spelltread.jpg",
+            "recipes": [
+                {
+                    "item": "Arcanoweave Spellthread t2",
+                    "id": "240155",
+                    "color": "#A020F0",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 20, "statPenalty": 20, "multiBonus": 1.5 },
+                        { "name": "Crafting Speed", "count": 30 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 5 },
+                        { "name": "Mote of Pure Void", "id": "236952", "count": 6 },
+                        { "name": "Petrified Root", "id": "251285", "count": 4 },
+                        { "name": "Arcanoweave Bolt t2", "id": "239200", "count": 8 },
+                        { "name": "Radiant Shard t2", "id": "243603", "count": 6 },
+                        { "name": "Arcanoweave t2", "id": "237017", "count": 12 }
+                    ],
+                    "outputs": [
+                        { "name": "Arcanoweave Spellthread t2", "id": "240155", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingSpellthreadsTalantes1.png",
+                                            "note": "профа на старті недороблена із за чого непонятно де взяти скілл на гарант т2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "item": "Sunfire Silk Spellthread t2",
+                    "id": "240133",
+                    "color": "#A020F0",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 20, "statPenalty": 20, "multiBonus": 1.5 },
+                        { "name": "Crafting Speed", "count": 30 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 5 },
+                        { "name": "Mote of Primal Energy", "id": "236950", "count": 6 },
+                        { "name": "Petrified Root", "id": "251285", "count": 4 },
+                        { "name": "Sunfire Silk Bolt t2", "id": "239202", "count": 8 },
+                        { "name": "Radiant Shard t2", "id": "243603", "count": 6 },
+                        { "name": "Sunfire Silk t2", "id": "237016", "count": 12 }
+                    ],
+                    "outputs": [
+                        { "name": "Sunfire Silk Spellthread t2", "id": "240133", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingSpellthreadsTalantes1.png",
+                                            "note": "профа на старті недороблена із за чого непонятно де взяти скілл на гарант т2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "item": "Bright Linen Spellthread t2",
+                    "id": "240157",
+                    "color": "#A020F0",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 20, "statPenalty": 20, "multiBonus": 1.5 },
+                        { "name": "Crafting Speed", "count": 30 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 3 },
+                        { "name": "Imbued Bright Linen Bolt t2", "id": "239703", "count": 2 },
+                        { "name": "Eversinging Dust t2", "id": "243600", "count": 2 }
+                    ],
+                    "outputs": [
+                        { "name": "Bright Linen Spellthread t2", "id": "240157", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingSpellthreadsTalantes1.png",
+                                            "note": "центральний талант не обовязково на 30 брати, там 15% скрафтспіда"
                                         }
                                     ]
                                 }

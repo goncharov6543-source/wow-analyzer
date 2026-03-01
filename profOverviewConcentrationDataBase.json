@@ -1,5 +1,45 @@
 [
     {
+      "name": "Arcanoweave Bolt",
+      "id": 239200,
+      "prof": "TAILORING",
+      "ConcCost": 370,
+      "recipe": [
+        { "name": "Mote of Wild Magic", "id": 236951, "count": 4 },
+        { "name": "Arcanoweave t1", "id": 237018, "count": 5 },
+        { "name": "Imbued Bright Linen Bolt t1", "id": 239702, "count": 6 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 370 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+    {
+      "name": "Sunfire Silk Bolt",
+      "id": 239202,
+      "prof": "TAILORING",
+      "ConcCost": 370,
+      "recipe": [
+        { "name": "Mote of Light", "id": 236949, "count": 4 },
+        { "name": "Sunfire Silk t1", "id": 237015, "count": 5 },
+        { "name": "Imbued Bright Linen Bolt t1", "id": 239702, "count": 6 }
+      ],
+      "stats": [
+        { "name": "Difficulty", "count": 400 },
+        { "name": "Concentration", "count": 370 },
+        { "name": "Resourcefulness", "count": 0, "unit": "%" },
+        { "name": "Multicraft", "count": 0, "unit": "%" },
+        { "name": "Ingenuity", "count": 0, "unit": "%" }
+      ]
+    },
+
+
+
+
+    {
       "name": "Sterling Alloy",
       "id": 238205,
       "prof": "BLACKSMITHING",
