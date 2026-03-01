@@ -2,13 +2,59 @@ const ReagentsScanner = {
     isInit: false,
     chartObserver: null,
 
+    // --- ДОДАНО: Змінні для пагінації ---
+    currentPage: 0,
+    itemsPerPage: 3,
+
     init: function() {
         if (this.isInit) return;
         this.injectStyles();
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Smooth Charts & Tier Icons Scaled)");
+        console.log("🧪 Reagents Scanner Initialized (Smooth Charts & Tier Icons Scaled & Pagination)");
+    },
+
+    // --- ДОДАНО: Логіка перемикання сторінок ---
+    changePage: function(dir) {
+        if (typeof REAGENTS_DB === 'undefined') return;
+        const totalPages = Math.ceil(Object.keys(REAGENTS_DB).length / this.itemsPerPage);
+        
+        this.currentPage += dir;
+        if (this.currentPage < 0) this.currentPage = totalPages - 1; // Кругова прокрутка назад
+        if (this.currentPage >= totalPages) this.currentPage = 0;    // Кругова прокрутка вперед
+        
+        this.render();
+    },
+
+    goToPage: function(idx) {
+        this.currentPage = idx;
+        this.render();
+    },
+
+    // --- ДОДАНО: Генерація HTML пагінації ---
+    generatePaginationHtml: function(allProfs, totalPages) {
+        if (totalPages <= 1) return ''; // Якщо сторінка лише одна, ховаємо пагінацію
+
+        let barsHtml = '';
+        for (let i = 0; i < totalPages; i++) {
+            const start = i * this.itemsPerPage;
+            // Збираємо назви професій для цієї сторінки, щоб показати в підказці
+            const profsOnPage = allProfs.slice(start, start + this.itemsPerPage).map(p => p[0]).join(', ');
+            const activeClass = i === this.currentPage ? 'active' : '';
+
+            barsHtml += `<div class="pag-bar ${activeClass}" data-profs="${profsOnPage}" onclick="ReagentsScanner.goToPage(${i})"></div>`;
+        }
+
+        return `
+            <div class="reagents-pagination">
+                <button class="pag-arrow" onclick="ReagentsScanner.changePage(-1)">&#10094;</button>
+                <div class="pag-bars-container">
+                    ${barsHtml}
+                </div>
+                <button class="pag-arrow" onclick="ReagentsScanner.changePage(1)">&#10095;</button>
+            </div>
+        `;
     },
 
     injectStyles: function() {
@@ -40,7 +86,7 @@ const ReagentsScanner = {
             .r-icon-wrapper { position: relative; z-index: 2; padding: 2px; }
             .r-icon { border-radius: 4px; object-fit: cover; display: block; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
             .r-info { display: flex; flex-direction: column; justify-content: center; width: 100%; overflow: hidden; line-height: 1.2; position: relative; z-index: 2; text-shadow: 0 2px 4px rgba(0,0,0,0.9); }
-            .r-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; display: flex; align-items: center; } /* For icon */
+            .r-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; display: flex; align-items: center; }
             .r-price { font-family: 'Segoe UI', sans-serif; font-weight: 600; display: flex; align-items: baseline; gap: 8px; }
             .chart-bg { position: absolute; bottom: -5px; left: 0; width: 100%; height: 70%; z-index: 0; opacity: 0.3; pointer-events: none; }
 
@@ -49,12 +95,11 @@ const ReagentsScanner = {
             .trend-down { color: #ff4444; }
             .trend-neutral { color: #666; }
 
-            /* --- UPDATED SCALABLE ICON --- */
             .q-icon { 
                 width: 1.1em; 
                 height: 1.1em; 
                 margin-left: 4px; 
-                vertical-align: -0.2em; /* Centers relative to text baseline */
+                vertical-align: -0.2em;
             }
 
             @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
@@ -75,6 +120,42 @@ const ReagentsScanner = {
             .legend-item { display: flex; align-items: center; gap: 5px; }
             .dot-price { width: 8px; height: 8px; background: #0070dd; border-radius: 50%; }
             .dot-qty { width: 8px; height: 8px; background: #ff8800; border-radius: 50%; }
+
+            /* --- ДОДАНО: СТИЛІ ПАГІНАЦІЇ --- */
+            .reagents-pagination {
+                display: flex; align-items: center; justify-content: center;
+                width: 50%; margin: 0 auto 25px auto; gap: 15px;
+            }
+            .pag-arrow {
+                background: none; border: none; color: #777; font-size: 18px; 
+                cursor: pointer; transition: all 0.2s ease; padding: 5px 10px;
+                display: flex; align-items: center; justify-content: center; outline: none;
+            }
+            .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
+            
+            .pag-bars-container {
+                display: flex; gap: 8px; flex-grow: 1; height: 16px; align-items: center;
+            }
+            .pag-bar {
+                flex-grow: 1; height: 3px; background: #333; border-radius: 2px; 
+                cursor: pointer; transition: all 0.2s ease; position: relative;
+            }
+            .pag-bar.active { background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+            
+            /* Ефект при наведенні */
+            .pag-bar:hover { height: 7px; background: #888; }
+            .pag-bar.active:hover { background: #ffea00; }
+
+            /* Тултип з назвами професій */
+            .pag-bar::after {
+                content: attr(data-profs);
+                position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%);
+                background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px;
+                border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444;
+                opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10;
+                pointer-events: none; letter-spacing: 0.5px;
+            }
+            .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 150%; }
         `;
         document.head.appendChild(style);
     },
@@ -110,11 +191,29 @@ const ReagentsScanner = {
 
     render: function() {
         const container = document.getElementById('reagents-content');
-        if (!container || typeof REAGENTS_DB === 'undefined') return;
+        if (!container) return;
 
-        let html = '<div class="prof-grid-wrapper">';
+        if (typeof REAGENTS_DB === 'undefined') {
+            container.innerHTML = '<div style="padding:20px;text-align:center;">No reagent data loaded.</div>';
+            return;
+        }
 
-        for (const [profName, items] of Object.entries(REAGENTS_DB)) {
+        // --- ДОДАНО: Логіка нарізання масиву для сторінок ---
+        const allProfs = Object.entries(REAGENTS_DB);
+        const totalPages = Math.ceil(allProfs.length / this.itemsPerPage);
+
+        // Перевірка на випадок якщо ми були на 3-й сторінці, а дані оновились і тепер сторінок лише 2
+        if (this.currentPage >= totalPages && totalPages > 0) this.currentPage = totalPages - 1;
+
+        const startIdx = this.currentPage * this.itemsPerPage;
+        const pageProfs = allProfs.slice(startIdx, startIdx + this.itemsPerPage);
+
+        // Додаємо пагінацію нагору
+        let html = this.generatePaginationHtml(allProfs, totalPages);
+        html += '<div class="prof-grid-wrapper">';
+
+        // Тепер перебираємо тільки pageProfs (3 професії)
+        for (const [profName, items] of pageProfs) {
             const headerColor = (typeof PROF_COLORS !== 'undefined' && PROF_COLORS[profName]) 
                 ? PROF_COLORS[profName] : 'linear-gradient(90deg, #333, #555)';
 
@@ -128,7 +227,7 @@ const ReagentsScanner = {
 
             items.forEach(item => {
                 const count = parseInt(item.itemUsed) || 0;
-                const dbData = PRICES[item.name] || { price: 0, icon: DEF_ICON };
+                const dbData = (typeof PRICES !== 'undefined' && PRICES[item.name]) ? PRICES[item.name] : { price: 0, icon: (typeof DEF_ICON !== 'undefined' ? DEF_ICON : '') };
                 
                 let cardClass = 'card-normal';
                 if (count >= 20) cardClass = 'card-huge';
@@ -138,7 +237,6 @@ const ReagentsScanner = {
                 const svgChart = this.getSmoothSparklineSVG(historyData);
                 const trendHtml = this.get24hChange(historyData, dbData.price);
 
-                // --- TIER ICONS LOGIC ---
                 let displayName = item.name;
                 let tierHtml = '';
                 const match = displayName.match(/ [tq]([1-3])/i);
@@ -193,7 +291,6 @@ const ReagentsScanner = {
         const historyData = (typeof HISTORY !== 'undefined' && HISTORY[itemName]) ? HISTORY[itemName] : [];
         const lotsData = (typeof LOTS !== 'undefined' && LOTS[itemName]) ? LOTS[itemName] : [];
         
-        // Tier Logic for Modal Title
         let displayName = itemName;
         let tierHtml = '';
         const match = displayName.match(/ [tq]([1-3])/i);
@@ -204,7 +301,7 @@ const ReagentsScanner = {
         
         const header = document.getElementById('detail-header');
         header.innerHTML = `
-            <img src="${dbData ? dbData.icon : DEF_ICON}" style="width:52px; height:52px; border-radius:6px; border:2px solid #555;">
+            <img src="${dbData ? dbData.icon : (typeof DEF_ICON !== 'undefined' ? DEF_ICON : '')}" style="width:52px; height:52px; border-radius:6px; border:2px solid #555;">
             <div>
                 <div style="font-size:26px; font-weight:bold; color:#fff; display:flex; align-items:center;">${displayName} ${tierHtml}</div>
                 <div style="font-size:20px; color:var(--gold);">${this.formatPrice(dbData ? dbData.price : 0)}</div>
@@ -268,7 +365,6 @@ const ReagentsScanner = {
         const getY_Price = (p) => height - ((p - minP) / (maxP - minP)) * height;
         const getY_Qty = (q) => height - (((q || 0) - minQ) / (maxQ - minQ)) * height;
 
-        // --- SMOOTH (BEZIER) CHART ---
         let pathP = `M 0 ${getY_Price(data[0].p)}`;
         for (let i = 1; i < data.length; i++) {
             const x = getX(i); const y = getY_Price(data[i].p);

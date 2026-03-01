@@ -983,5 +983,191 @@
         "id": 242789,
         "itemUsed": "8"
       }
+    ],
+
+
+
+
+    "INSCRIPTION": [
+      {
+        "id": 236949,
+        "name": "Mote of Light",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236951,
+        "name": "Mote of Wild Magic",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236952,
+        "name": "Mote of Pure Void",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236950,
+        "name": "Mote of Primal Energy",
+        "itemUsed": "8"
+      },
+      {
+        "name": "Sanguithorn t1",
+        "id": 236770,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sanguithorn t2",
+        "id": 236771,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Mana Lily t1",
+        "id": 236778,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Mana Lily t2",
+        "id": 236779,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Azeroot t1",
+        "id": 236774,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Azeroot t2",
+        "id": 236775,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Tranquility Bloom t1",
+        "id": 236761,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Tranquility Bloom t2",
+        "id": 236767,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Argentleaf t1",
+        "id": 236776,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Argentleaf t2",
+        "id": 236777,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Soul Cipher t1",
+        "id": 245766,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Soul Cipher t2",
+        "id": 245767,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Duskshrouded Stone t1",
+        "id": 242788,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Duskshrouded Stone t2",
+        "id": 242789,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Sienna Ink t1",
+        "id": 245805,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sienna Ink t2",
+        "id": 245806,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Munsell Ink t1",
+        "id": 245801,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Munsell Ink t2",
+        "id": 245802,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Majestic Fin",
+        "id": 238530,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Hide",
+        "id": 238529,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Claw",
+        "id": 238528,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Petrified Root",
+        "id": 251285,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Thalassian Essence of the Faire",
+        "id": 251923,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Powder Pigment t1",
+        "id": 245807,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Powder Pigment t2",
+        "id": 245808,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Argentleaf Pigment t1",
+        "id": 245803,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Argentleaf Pigment t2",
+        "id": 245804,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Mana Lily Pigment t1",
+        "id": 245867,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Mana Lily Pigment t2",
+        "id": 245866,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sanguithorn Pigment t1",
+        "id": 245865,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Sanguithorn Pigment t2",
+        "id": 245864,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Thalassian Songwater",
+        "id": 245882,
+        "itemUsed": "16"
+      }
     ]
   }
