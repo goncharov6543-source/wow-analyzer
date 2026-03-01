@@ -9818,6 +9818,89 @@
                     ]
                 }
             ]
+        },
+
+        {
+            "groupName": "Haranir Phials",
+            "icon": "./profOverviewIcons/HaranirPhials.jpg",
+            "recipes": [
+                {
+                    "item": "Haranir Phial of Perception t1",
+                    "id": "241317",
+                    "color": "#E5E4E2",
+                    "craftTime": 2,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 30, "statPenalty": 20, "multiBonus": 2.5 },
+                        { "name": "Crafting Speed", "count": 35 }
+                    ],
+                    "reagents": [
+                        { "name": "Mote of Wild Magic", "id": "236951", "count": 2 },
+                        { "name": "Sunglass Vial t1", "id": "240991", "count": 4 },
+                        { "name": "Tranquility Bloom t1", "id": "236761", "count": 8 },
+                        { "name": "Argentleaf t1", "id": "236776", "count": 3 },
+                        { "name": "Azeroot t1", "id": "236774", "count": 6 }
+                    ],
+                    "outputs": [
+                        { "name": "Haranir Phial of Perception t1", "id": "241317", "count": 4}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory2Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/AlchemyAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/AlchemyAccessory3Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/HaranirPhialsTalantes1.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+
+            ]
         }
     ],
 

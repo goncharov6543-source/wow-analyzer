@@ -16,7 +16,7 @@ const ReagentsScanner = {
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Opacity Fade & Fixed Slider)");
+        console.log("🧪 Reagents Scanner Initialized (Sync Slider without Grid Animation)");
     },
 
     changePage: function(dir) {
@@ -37,6 +37,7 @@ const ReagentsScanner = {
     },
 
     triggerSmoothRender: function() {
+        // Миттєво оновлюємо пагінацію, щоб повзунок почав свій рух
         if (typeof REAGENTS_DB !== 'undefined') {
             const allProfs = Object.entries(REAGENTS_DB);
             const totalPages = Math.ceil(allProfs.length / this.itemsPerPage);
@@ -46,9 +47,9 @@ const ReagentsScanner = {
         const grid = document.querySelector('.prof-grid-wrapper');
         if (grid) {
             this.isAnimating = true;
-            // Тільки зміна прозорості (без руху)
-            grid.style.opacity = '0';
             
+            // Чекаємо 400мс (рівно стільки часу триває анімація повзунка transition: left 0.4s)
+            // і тоді миттєво перемальовуємо лоти
             setTimeout(() => {
                 if (typeof REAGENTS_DB !== 'undefined') {
                     const allProfs = Object.entries(REAGENTS_DB);
@@ -56,7 +57,7 @@ const ReagentsScanner = {
                     this.renderGrid(allProfs, totalPages);
                 }
                 this.isAnimating = false;
-            }, 300); // 300мс на плавне згасання
+            }, 400); 
         } else {
             this.render();
         }
@@ -127,29 +128,23 @@ const ReagentsScanner = {
             .time-btn:hover { background: #333; color: #ddd; }
             .time-btn.active { background: #0070dd; color: #fff; border-color: #0070dd; box-shadow: 0 0 8px rgba(0, 112, 221, 0.4); }
 
-            /* --- АНІМАЦІЯ БЕЗ РУХУ (ТІЛЬКИ OPACITY) --- */
-            @keyframes smoothOpacityLoad {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
+            /* БЕЗ АНІМАЦІЙ ДЛЯ ЛОТІВ */
             .prof-grid-wrapper { 
                 display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
-                transition: opacity 0.3s ease-in-out; 
-                animation: smoothOpacityLoad 0.5s ease-in-out forwards; 
             }
 
             .reagents-pagination { display: flex; align-items: center; justify-content: center; width: 50%; margin: 0 auto 25px auto; gap: 15px; }
             .pag-arrow { background: none; border: none; color: #777; font-size: 18px; cursor: pointer; transition: all 0.2s ease; padding: 5px 10px; display: flex; align-items: center; justify-content: center; outline: none; }
             .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
             
-            /* Виправлений повзунок: тепер він має z-index: 5 і їздить поверх сірих смужок */
             .pag-bars-container { display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; position: relative; }
             .pag-slider { position: absolute; height: 3px; background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); top: 50%; transform: translateY(-50%); border-radius: 2px; transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1); pointer-events: none; z-index: 5; }
             .pag-bar { flex-grow: 1; height: 100%; cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; z-index: 2; }
             .pag-bar::before { content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px; transition: all 0.2s ease; }
             
-            /* Сірі смужки більше не стають прозорими, вони просто є фоном для жовтої */
+            .pag-bar.active::before { background: transparent; box-shadow: none; }
             .pag-bar:hover::before { background: #888; }
+            .pag-bar.active:hover::before { background: transparent; }
             
             .pag-bar::after { content: attr(data-profs); position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px; border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444; opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10; pointer-events: none; letter-spacing: 0.5px; margin-bottom: 5px; }
             .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 100%; }
