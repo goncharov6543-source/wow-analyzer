@@ -1339,7 +1339,7 @@
             {
                 "item": "Dawn Crystal t1",
                 "id": "243605",
-                "color": "#E5E4E2",
+                "color": "#A020F0",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
@@ -1406,7 +1406,7 @@
             {
                 "item": "Dawn Crystal t2",
                 "id": "243606",
-                "color": "#E5E4E2",
+                "color": "#A020F0",
                 "craftTime": 2,
                 "timePenalty": 25,
                 "stats": [
@@ -9763,8 +9763,8 @@
                 {
                     "item": "Sunfire Silk Backpack",
                     "id": "240161",
-                    "color": "#E5E4E2",
-                    "craftTime": 2,
+                    "color": "#0070dd",
+                    "craftTime": 35,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 22, "resourcefulnessCape": 60 },
@@ -9772,7 +9772,7 @@
                     ],
                     "reagents": [
                         { "name": "Embroidery Floss", "id": "251691", "count": 2 },
-                        { "name": "Mote of Pri,al Energy", "id": "236950", "count": 6 },
+                        { "name": "Mote of Primal Energy", "id": "236950", "count": 6 },
                         { "name": "Sunfire Silk Bolt t1", "id": "239201", "count": 10 },
                         { "name": "Sunfire Silk t1", "id": "237015", "count": 32 }
                     ],
@@ -9792,12 +9792,232 @@
                                             "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
                                         },
                                         {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
                                             "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
                                             "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingBagsTalantes1.png",
+                                            "note": "центральний талант не критичний, за останній нод дають 15% крафт спіда"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "item": "Arcanoweave Reagent Rucksack",
+                    "id": "240158",
+                    "color": "#0070dd",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 22, "resourcefulnessCape": 60 },
+                        { "name": "Crafting Speed", "count": 31 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 2 },
+                        { "name": "Mote of Pure Void", "id": "236952", "count": 6 },
+                        { "name": "Arcanoweave Bolt t1", "id": "239198", "count": 10 },
+                        { "name": "Arcanoweave t1", "id": "237018", "count": 32 }
+                    ],
+                    "outputs": [
+                        { "name": "Arcanoweave Reagent Rucksack", "id": "240158", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
                                         },
                                         {
                                             "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
                                             "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingBagsTalantes1.png",
+                                            "note": "центральний талант не критичний, за останній нод дають 15% крафт спіда"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "item": "Imbued Bright Linen Backpack",
+                    "id": "240160",
+                    "color": "#0070dd",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 22, "resourcefulnessCape": 60 },
+                        { "name": "Crafting Speed", "count": 31 }
+                    ],
+                    "reagents": [
+                        { "name": "Silverleaf Thread", "id": "251665", "count": 3 },
+                        { "name": "Fantastic Fur", "id": "238525", "count": 8 },
+                        { "name": "Imbued Bright Linen Bolt t1", "id": "239702", "count": 10 }
+                    ],
+                    "outputs": [
+                        { "name": "Imbued Bright Linen Backpack", "id": "240160", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringCraftingBagsTalantes1.png",
+                                            "note": "центральний талант не критичний, за останній нод дають 15% крафт спіда"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "item": "Bright Linen Reagent Satchel",
+                    "id": "240159",
+                    "color": "#0070dd",
+                    "craftTime": 35,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 22, "resourcefulnessCape": 60 },
+                        { "name": "Crafting Speed", "count": 31 }
+                    ],
+                    "reagents": [
+                        { "name": "Silverleaf Thread", "id": "251665", "count": 3 },
+                        { "name": "Fantastic Fur", "id": "238525", "count": 8 },
+                        { "name": "Bright Linen Bolt t1", "id": "239700", "count": 8 }
+                    ],
+                    "outputs": [
+                        { "name": "Imbued Bright Linen Backpack", "id": "240160", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
                                         }
                                     ]
                                 }
@@ -9833,8 +10053,6 @@
                         }
                     ]
                 }
-
-
             ]
         }
     ],
