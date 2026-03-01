@@ -11,7 +11,7 @@ const REALM_SLUG = 'tarren-mill';
 
 const RES_FACTOR = 0.5; 
 const MULTI_BONUS = 2; 
-const HISTORY_LIMIT = 336; 
+const HISTORY_LIMIT = 4320; 
 const DEFAULT_PROF_COLOR = "linear-gradient(90deg, #333 0%, #555 100%)"; 
 
 // Шляхи до файлів

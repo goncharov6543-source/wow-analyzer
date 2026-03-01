@@ -6,13 +6,17 @@ const ReagentsScanner = {
     itemsPerPage: 3,
     isAnimating: false,
 
+    // Додано для графіків
+    currentHistoryData: [],
+    currentChartRange: 7, // За замовчуванням 7 днів (1 тиждень)
+
     init: function() {
         if (this.isInit) return;
         this.injectStyles();
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Smooth Pagination & Hitboxes - Slowed Down)");
+        console.log("🧪 Reagents Scanner Initialized (Smooth UI & 6-Months Chart)");
     },
 
     changePage: function(dir) {
@@ -39,11 +43,12 @@ const ReagentsScanner = {
             grid.style.opacity = '0';
             grid.style.transform = 'translateY(10px) scale(0.99)';
             
-            // Збільшено в 2.5 рази: 150 * 2.5 = 375мс
+            // Затримка зменшена до 200мс (щоб не було паузи), 
+            // а сама анімація появи в CSS тепер займає 0.8с!
             setTimeout(() => {
                 this.render();
                 this.isAnimating = false;
-            }, 375);
+            }, 200); 
         } else {
             this.render();
         }
@@ -124,58 +129,41 @@ const ReagentsScanner = {
             .history-table td { padding: 6px 10px; border-bottom: 1px solid #2a2a2a; color: #ccc; }
             .history-table tr:hover { background: #222; }
             .qty-col { color: var(--blue); font-weight: bold; text-align:right; }
-            .chart-legend { display: flex; gap: 15px; position: absolute; top: 20px; right: 20px; font-size: 11px; font-weight: bold; text-transform: uppercase; }
+            
+            .chart-legend { display: flex; gap: 15px; font-size: 11px; font-weight: bold; text-transform: uppercase; }
             .legend-item { display: flex; align-items: center; gap: 5px; }
             .dot-price { width: 8px; height: 8px; background: #0070dd; border-radius: 50%; }
             .dot-qty { width: 8px; height: 8px; background: #ff8800; border-radius: 50%; }
 
-            /* --- АНІМАЦІЯ БЛОКУ (ЗБІЛЬШЕНО У 2.5 РАЗИ) --- */
+            /* Стилі кнопок періоду */
+            .time-btn {
+                background: #222; border: 1px solid #444; color: #888; border-radius: 4px;
+                padding: 4px 12px; font-size: 11px; cursor: pointer; transition: all 0.2s; font-weight: bold;
+            }
+            .time-btn:hover { background: #333; color: #ddd; }
+            .time-btn.active { background: #0070dd; color: #fff; border-color: #0070dd; box-shadow: 0 0 8px rgba(0, 112, 221, 0.4); }
+
+            /* --- ПЛАВНА АНІМАЦІЯ БЛОКУ --- */
             @keyframes smoothPageLoad {
-                from { opacity: 0; transform: translateY(10px) scale(0.99); }
+                from { opacity: 0; transform: translateY(15px) scale(0.98); }
                 to { opacity: 1; transform: translateY(0) scale(1); }
             }
             .prof-grid-wrapper { 
                 display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
-                transition: opacity 0.375s ease, transform 0.375s ease;
-                animation: smoothPageLoad 0.625s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+                transition: opacity 0.2s ease, transform 0.2s ease; /* Швидко зникає */
+                animation: smoothPageLoad 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Довго і плавно з'являється */
             }
 
-            .reagents-pagination {
-                display: flex; align-items: center; justify-content: center;
-                width: 50%; margin: 0 auto 25px auto; gap: 15px;
-            }
-            .pag-arrow {
-                background: none; border: none; color: #777; font-size: 18px; 
-                cursor: pointer; transition: all 0.2s ease; padding: 5px 10px;
-                display: flex; align-items: center; justify-content: center; outline: none;
-            }
+            .reagents-pagination { display: flex; align-items: center; justify-content: center; width: 50%; margin: 0 auto 25px auto; gap: 15px; }
+            .pag-arrow { background: none; border: none; color: #777; font-size: 18px; cursor: pointer; transition: all 0.2s ease; padding: 5px 10px; display: flex; align-items: center; justify-content: center; outline: none; }
             .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
-            
-            .pag-bars-container {
-                display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center;
-            }
-            .pag-bar {
-                flex-grow: 1; height: 100%;
-                cursor: pointer; position: relative;
-                display: flex; align-items: center; justify-content: center;
-            }
-            
-            .pag-bar::before {
-                content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px;
-                transition: all 0.2s ease;
-            }
+            .pag-bars-container { display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; }
+            .pag-bar { flex-grow: 1; height: 100%; cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; }
+            .pag-bar::before { content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px; transition: all 0.2s ease; }
             .pag-bar.active::before { background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
             .pag-bar:hover::before { background: #888; }
             .pag-bar.active:hover::before { background: #ffea00; }
-
-            .pag-bar::after {
-                content: attr(data-profs);
-                position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%);
-                background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px;
-                border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444;
-                opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10;
-                pointer-events: none; letter-spacing: 0.5px; margin-bottom: 5px;
-            }
+            .pag-bar::after { content: attr(data-profs); position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px; border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444; opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10; pointer-events: none; letter-spacing: 0.5px; margin-bottom: 5px; }
             .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 100%; }
         `;
         document.head.appendChild(style);
@@ -186,13 +174,22 @@ const ReagentsScanner = {
             <div id="reagent-detail-modal" class="modal-overlay" onclick="if(event.target===this) ReagentsScanner.closeModal()">
                 <div class="modal-box" style="width: 1200px; max-width: 95vw;">
                     <span class="close-modal" onclick="ReagentsScanner.closeModal()">×</span>
-                    <div id="detail-header" style="display:flex; align-items:center; gap:15px; margin-bottom:25px; border-bottom:1px solid #333; padding-bottom:15px;"></div>
+                    <div id="detail-header" style="display:flex; align-items:center; gap:15px; margin-bottom:20px; border-bottom:1px solid #333; padding-bottom:15px;"></div>
                     <div class="detail-layout">
                         <div class="detail-left">
-                            <div style="font-size:14px; color:#888; text-transform:uppercase; margin-bottom:5px;">Market History (14 Days)</div>
-                            <div class="chart-legend">
-                                <div class="legend-item" style="color:#0070dd"><div class="dot-price"></div> Price</div>
-                                <div class="legend-item" style="color:#ff8800"><div class="dot-qty"></div> Quantity</div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #222; padding-bottom:10px;">
+                                <div style="display:flex; align-items:center; gap: 15px;">
+                                    <div style="font-size:14px; color:#888; text-transform:uppercase; font-weight:bold;">Market History</div>
+                                    <div class="chart-filters" style="display:flex; gap:5px;">
+                                        <button id="btn-1w" class="time-btn" onclick="ReagentsScanner.setChartRange(7)">1 W</button>
+                                        <button id="btn-1m" class="time-btn" onclick="ReagentsScanner.setChartRange(30)">1 M</button>
+                                        <button id="btn-6m" class="time-btn" onclick="ReagentsScanner.setChartRange(180)">6 M</button>
+                                    </div>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item" style="color:#0070dd"><div class="dot-price"></div> Price</div>
+                                    <div class="legend-item" style="color:#ff8800"><div class="dot-qty"></div> Quantity</div>
+                                </div>
                             </div>
                             <div id="interactive-chart" class="chart-wrapper"></div>
                         </div>
@@ -303,10 +300,37 @@ const ReagentsScanner = {
         else return `<span class="trend-val trend-neutral">~0%</span>`;
     },
 
+    // --- ЛОГІКА КНОПОК ТА ПЕРЕМАЛЬОВКИ ГРАФІКІВ ---
+    setChartRange: function(days) {
+        this.currentChartRange = days;
+        this.updateChartButtons();
+        this.renderInteractiveChart();
+    },
+
+    updateChartButtons: function() {
+        document.getElementById('btn-1w').classList.remove('active');
+        document.getElementById('btn-1m').classList.remove('active');
+        document.getElementById('btn-6m').classList.remove('active');
+        
+        if (this.currentChartRange === 7) document.getElementById('btn-1w').classList.add('active');
+        if (this.currentChartRange === 30) document.getElementById('btn-1m').classList.add('active');
+        if (this.currentChartRange === 180) document.getElementById('btn-6m').classList.add('active');
+    },
+
+    getFilteredHistory: function() {
+        if (!this.currentHistoryData) return [];
+        const now = Date.now();
+        const cutoff = now - (this.currentChartRange * 24 * 60 * 60 * 1000);
+        return this.currentHistoryData.filter(d => d.t >= cutoff);
+    },
+
     openDetails: function(itemName) {
         const dbData = PRICES[itemName];
         const historyData = (typeof HISTORY !== 'undefined' && HISTORY[itemName]) ? HISTORY[itemName] : [];
         const lotsData = (typeof LOTS !== 'undefined' && LOTS[itemName]) ? LOTS[itemName] : [];
+        
+        this.currentHistoryData = historyData; // Зберігаємо дані для фільтрації
+        this.currentChartRange = 7; // Відкриваємо модалку завжди на 1 W
         
         let displayName = itemName;
         let tierHtml = '';
@@ -326,6 +350,7 @@ const ReagentsScanner = {
         `;
 
         document.getElementById('reagent-detail-modal').style.display = 'flex';
+        this.updateChartButtons(); // Оновлюємо стилі кнопок
         
         const chartContainer = document.getElementById('interactive-chart');
         chartContainer.innerHTML = '';
@@ -333,13 +358,13 @@ const ReagentsScanner = {
         this.chartObserver = new ResizeObserver(entries => {
             for (let entry of entries) {
                 if (entry.contentRect.width > 0 && entry.contentRect.height > 0) {
-                    this.renderInteractiveChart(historyData);
+                    this.renderInteractiveChart();
                     this.chartObserver.disconnect(); 
                 }
             }
         });
         this.chartObserver.observe(chartContainer);
-        setTimeout(() => { if (chartContainer.innerHTML === '') this.renderInteractiveChart(historyData); }, 100);
+        setTimeout(() => { if (chartContainer.innerHTML === '') this.renderInteractiveChart(); }, 100);
 
         const listBody = document.getElementById('lots-list');
         let listHtml = '';
@@ -358,11 +383,16 @@ const ReagentsScanner = {
         if (this.chartObserver) this.chartObserver.disconnect();
     },
 
-    renderInteractiveChart: function(data) {
+    renderInteractiveChart: function() {
         const container = document.getElementById('interactive-chart');
-        if (container.clientWidth === 0 || container.clientHeight === 0) return;
+        if (!container || container.clientWidth === 0 || container.clientHeight === 0) return;
 
-        if (!data || data.length < 2) { container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Not enough history data</div>'; return; }
+        const data = this.getFilteredHistory();
+
+        if (!data || data.length < 2) { 
+            container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Not enough history data for this period</div>'; 
+            return; 
+        }
 
         let minP = Infinity, maxP = -Infinity;
         data.forEach(d => { if(d.p < minP) minP = d.p; if(d.p > maxP) maxP = d.p; });
@@ -452,8 +482,15 @@ const ReagentsScanner = {
         };
     },
 
-    getSmoothSparklineSVG: function(data) {
-        if (!data || data.length < 2) return '';
+    getSmoothSparklineSVG: function(fullData) {
+        if (!fullData || fullData.length < 2) return '';
+        // Спарклайни (маленькі графіки на картках) краще обрізати до 14 днів, 
+        // щоб вони завжди були читабельними, навіть якщо в базі лежить пів року даних.
+        const now = Date.now();
+        const cutoff = now - (14 * 24 * 60 * 60 * 1000); 
+        const data = fullData.filter(d => d.t >= cutoff);
+        if (data.length < 2) return '';
+
         const w = 100, h = 50;
         let min = Infinity, max = -Infinity;
         data.forEach(d => { if(d.p < min) min = d.p; if(d.p > max) max = d.p; });
