@@ -6,9 +6,8 @@ const ReagentsScanner = {
     itemsPerPage: 3,
     isAnimating: false,
 
-    // Додано для графіків
     currentHistoryData: [],
-    currentChartRange: 7, // За замовчуванням 7 днів (1 тиждень)
+    currentChartRange: 7, 
 
     init: function() {
         if (this.isInit) return;
@@ -16,7 +15,7 @@ const ReagentsScanner = {
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Smooth UI & 6-Months Chart)");
+        console.log("🧪 Reagents Scanner Initialized (Smooth Flow UI & Fixes)");
     },
 
     changePage: function(dir) {
@@ -40,15 +39,15 @@ const ReagentsScanner = {
         const grid = document.querySelector('.prof-grid-wrapper');
         if (grid) {
             this.isAnimating = true;
+            // Анімація пропадання ВНИЗ
             grid.style.opacity = '0';
-            grid.style.transform = 'translateY(10px) scale(0.99)';
+            grid.style.transform = 'translateY(30px) scale(0.95)'; 
             
-            // Затримка зменшена до 200мс (щоб не було паузи), 
-            // а сама анімація появи в CSS тепер займає 0.8с!
+            // Чекаємо 300мс (поки лоти відпливуть вниз) перед рендером
             setTimeout(() => {
                 this.render();
                 this.isAnimating = false;
-            }, 200); 
+            }, 300); 
         } else {
             this.render();
         }
@@ -66,10 +65,15 @@ const ReagentsScanner = {
             barsHtml += `<div class="pag-bar ${activeClass}" data-profs="${profsOnPage}" onclick="ReagentsScanner.goToPage(${i})"></div>`;
         }
 
+        // Обчислення динамічної ширини та позиції золотого "повзунка"
+        const sliderWidth = `calc((100% - ${(totalPages - 1) * 8}px) / ${totalPages})`;
+        const sliderLeft = `calc((${sliderWidth} + 8px) * ${this.currentPage})`;
+
         return `
             <div class="reagents-pagination">
                 <button class="pag-arrow" onclick="ReagentsScanner.changePage(-1)">&#10094;</button>
                 <div class="pag-bars-container">
+                    <div class="pag-slider" style="width: ${sliderWidth}; left: ${sliderLeft};"></div>
                     ${barsHtml}
                 </div>
                 <button class="pag-arrow" onclick="ReagentsScanner.changePage(1)">&#10095;</button>
@@ -135,7 +139,6 @@ const ReagentsScanner = {
             .dot-price { width: 8px; height: 8px; background: #0070dd; border-radius: 50%; }
             .dot-qty { width: 8px; height: 8px; background: #ff8800; border-radius: 50%; }
 
-            /* Стилі кнопок періоду */
             .time-btn {
                 background: #222; border: 1px solid #444; color: #888; border-radius: 4px;
                 padding: 4px 12px; font-size: 11px; cursor: pointer; transition: all 0.2s; font-weight: bold;
@@ -145,24 +148,30 @@ const ReagentsScanner = {
 
             /* --- ПЛАВНА АНІМАЦІЯ БЛОКУ --- */
             @keyframes smoothPageLoad {
-                from { opacity: 0; transform: translateY(15px) scale(0.98); }
+                from { opacity: 0; transform: translateY(30px) scale(0.95); }
                 to { opacity: 1; transform: translateY(0) scale(1); }
             }
             .prof-grid-wrapper { 
                 display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
-                transition: opacity 0.2s ease, transform 0.2s ease; /* Швидко зникає */
-                animation: smoothPageLoad 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Довго і плавно з'являється */
+                transition: opacity 0.3s ease-in, transform 0.3s ease-in; /* Швидко зникає вниз */
+                animation: smoothPageLoad 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Плавно випливає знизу */
             }
 
             .reagents-pagination { display: flex; align-items: center; justify-content: center; width: 50%; margin: 0 auto 25px auto; gap: 15px; }
             .pag-arrow { background: none; border: none; color: #777; font-size: 18px; cursor: pointer; transition: all 0.2s ease; padding: 5px 10px; display: flex; align-items: center; justify-content: center; outline: none; }
             .pag-arrow:hover { color: #ffd700; transform: scale(1.3); }
-            .pag-bars-container { display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; }
-            .pag-bar { flex-grow: 1; height: 100%; cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; }
+            
+            /* Нова логіка повзунка */
+            .pag-bars-container { display: flex; gap: 8px; flex-grow: 1; height: 24px; align-items: center; position: relative; }
+            .pag-slider { position: absolute; height: 3px; background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); top: 50%; transform: translateY(-50%); border-radius: 2px; transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1); pointer-events: none; z-index: 1; }
+            .pag-bar { flex-grow: 1; height: 100%; cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; z-index: 2; }
             .pag-bar::before { content: ''; width: 100%; height: 3px; background: #333; border-radius: 2px; transition: all 0.2s ease; }
-            .pag-bar.active::before { background: #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+            
+            /* Робимо прозорим активний бар, щоб золотий повзунок світив під ним */
+            .pag-bar.active::before { background: transparent; box-shadow: none; }
             .pag-bar:hover::before { background: #888; }
-            .pag-bar.active:hover::before { background: #ffea00; }
+            .pag-bar.active:hover::before { background: transparent; }
+            
             .pag-bar::after { content: attr(data-profs); position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); background: rgba(0, 0, 0, 0.9); color: #ccc; padding: 5px 10px; border-radius: 4px; font-size: 11px; white-space: nowrap; border: 1px solid #444; opacity: 0; visibility: hidden; transition: all 0.2s ease; z-index: 10; pointer-events: none; letter-spacing: 0.5px; margin-bottom: 5px; }
             .pag-bar:hover::after { opacity: 1; visibility: visible; bottom: 100%; }
         `;
@@ -177,7 +186,7 @@ const ReagentsScanner = {
                     <div id="detail-header" style="display:flex; align-items:center; gap:15px; margin-bottom:20px; border-bottom:1px solid #333; padding-bottom:15px;"></div>
                     <div class="detail-layout">
                         <div class="detail-left">
-                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #222; padding-bottom:10px;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:5px;">
                                 <div style="display:flex; align-items:center; gap: 15px;">
                                     <div style="font-size:14px; color:#888; text-transform:uppercase; font-weight:bold;">Market History</div>
                                     <div class="chart-filters" style="display:flex; gap:5px;">
@@ -259,8 +268,11 @@ const ReagentsScanner = {
                     displayName = displayName.replace(match[0], '').trim();
                 }
 
+                // Екранування апострофів (як у Sin'dorei Lens)
+                const escapedItemName = item.name.replace(/'/g, "\\'");
+
                 html += `
-                    <div class="reagent-card ${cardClass}" onclick="ReagentsScanner.openDetails('${item.name}')">
+                    <div class="reagent-card ${cardClass}" onclick="ReagentsScanner.openDetails('${escapedItemName}')">
                         <div class="chart-bg">${svgChart}</div>
                         <div class="r-icon-wrapper">
                             <img src="${dbData.icon}" class="r-icon">
@@ -300,7 +312,6 @@ const ReagentsScanner = {
         else return `<span class="trend-val trend-neutral">~0%</span>`;
     },
 
-    // --- ЛОГІКА КНОПОК ТА ПЕРЕМАЛЬОВКИ ГРАФІКІВ ---
     setChartRange: function(days) {
         this.currentChartRange = days;
         this.updateChartButtons();
@@ -329,8 +340,8 @@ const ReagentsScanner = {
         const historyData = (typeof HISTORY !== 'undefined' && HISTORY[itemName]) ? HISTORY[itemName] : [];
         const lotsData = (typeof LOTS !== 'undefined' && LOTS[itemName]) ? LOTS[itemName] : [];
         
-        this.currentHistoryData = historyData; // Зберігаємо дані для фільтрації
-        this.currentChartRange = 7; // Відкриваємо модалку завжди на 1 W
+        this.currentHistoryData = historyData; 
+        this.currentChartRange = 7; 
         
         let displayName = itemName;
         let tierHtml = '';
@@ -340,17 +351,21 @@ const ReagentsScanner = {
             displayName = displayName.replace(match[0], '').trim();
         }
         
+        const trendHtmlModal = this.get24hChange(historyData, dbData ? dbData.price : 0);
+        
         const header = document.getElementById('detail-header');
         header.innerHTML = `
             <img src="${dbData ? dbData.icon : (typeof DEF_ICON !== 'undefined' ? DEF_ICON : '')}" style="width:52px; height:52px; border-radius:6px; border:2px solid #555;">
             <div>
-                <div style="font-size:26px; font-weight:bold; color:#fff; display:flex; align-items:center;">${displayName} ${tierHtml}</div>
+                <div style="font-size:26px; font-weight:bold; color:#fff; display:flex; align-items:center; gap:10px;">
+                    ${displayName} ${tierHtml} <div style="font-size:16px; margin-top:4px;">${trendHtmlModal}</div>
+                </div>
                 <div style="font-size:20px; color:var(--gold);">${this.formatPrice(dbData ? dbData.price : 0)}</div>
             </div>
         `;
 
         document.getElementById('reagent-detail-modal').style.display = 'flex';
-        this.updateChartButtons(); // Оновлюємо стилі кнопок
+        this.updateChartButtons(); 
         
         const chartContainer = document.getElementById('interactive-chart');
         chartContainer.innerHTML = '';
@@ -484,8 +499,6 @@ const ReagentsScanner = {
 
     getSmoothSparklineSVG: function(fullData) {
         if (!fullData || fullData.length < 2) return '';
-        // Спарклайни (маленькі графіки на картках) краще обрізати до 14 днів, 
-        // щоб вони завжди були читабельними, навіть якщо в базі лежить пів року даних.
         const now = Date.now();
         const cutoff = now - (14 * 24 * 60 * 60 * 1000); 
         const data = fullData.filter(d => d.t >= cutoff);
