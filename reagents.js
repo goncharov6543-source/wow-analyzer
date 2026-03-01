@@ -16,7 +16,7 @@ const ReagentsScanner = {
         this.createModal();
         this.isInit = true;
         this.render();
-        console.log("🧪 Reagents Scanner Initialized (Sync Slider without Grid Animation)");
+        console.log("🧪 Reagents Scanner Initialized (Sync Slider WITH Grid Animation)");
     },
 
     changePage: function(dir) {
@@ -48,16 +48,28 @@ const ReagentsScanner = {
         if (grid) {
             this.isAnimating = true;
             
-            // Чекаємо 400мс (рівно стільки часу триває анімація повзунка transition: left 0.4s)
-            // і тоді миттєво перемальовуємо лоти
+            // Додаємо клас для плавного зникнення
+            grid.classList.add('fading');
+            
+            // Чекаємо 200мс (половина від 400мс), поки лоти зникнуть, і тоді перемальовуємо
             setTimeout(() => {
                 if (typeof REAGENTS_DB !== 'undefined') {
                     const allProfs = Object.entries(REAGENTS_DB);
                     const totalPages = Math.ceil(allProfs.length / this.itemsPerPage);
                     this.renderGrid(allProfs, totalPages);
+                    
+                    // Знаходимо новий відрендерений грід
+                    const newGrid = document.querySelector('.prof-grid-wrapper');
+                    if (newGrid) {
+                        newGrid.classList.add('fading'); // Спершу робимо його прозорим
+                        newGrid.style.transition = 'none'; // Вимикаємо анімацію для миттєвого застосування
+                        void newGrid.offsetWidth; // Форсуємо перемальовування браузером
+                        newGrid.style.transition = ''; // Вмикаємо анімацію назад
+                        newGrid.classList.remove('fading'); // Запускаємо плавну появу
+                    }
                 }
                 this.isAnimating = false;
-            }, 400); 
+            }, 200); 
         } else {
             this.render();
         }
@@ -128,9 +140,17 @@ const ReagentsScanner = {
             .time-btn:hover { background: #333; color: #ddd; }
             .time-btn.active { background: #0070dd; color: #fff; border-color: #0070dd; box-shadow: 0 0 8px rgba(0, 112, 221, 0.4); }
 
-            /* БЕЗ АНІМАЦІЙ ДЛЯ ЛОТІВ */
+            /* З АНІМАЦІЄЮ ДЛЯ ЛОТІВ */
             .prof-grid-wrapper { 
                 display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px 40px 20px; align-items: start; 
+                transition: opacity 0.2s ease, transform 0.2s ease;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .prof-grid-wrapper.fading {
+                opacity: 0;
+                transform: translateY(15px);
             }
 
             .reagents-pagination { display: flex; align-items: center; justify-content: center; width: 50%; margin: 0 auto 25px auto; gap: 15px; }
