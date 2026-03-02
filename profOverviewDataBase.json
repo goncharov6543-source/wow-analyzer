@@ -1553,7 +1553,7 @@
 
                 {
                     "item": "Brilliant Silver Ore t1",
-                    "id": "237365",
+                    "id": "237364",
                     "color": "#FF6666",
                     "craftTime": 2,
                     "timePenalty": 25,
@@ -1697,7 +1697,7 @@
 
                 {
                     "item": "Refulgent Copper Ore t1",
-                    "id": "237361",
+                    "id": "237359",
                     "color": "#FF6666",
                     "craftTime": 2,
                     "timePenalty": 25,
@@ -1841,7 +1841,7 @@
 
                 {
                     "item": "Umbral Tin Ore t1",
-                    "id": "237363",
+                    "id": "237362",
                     "color": "#FF6666",
                     "craftTime": 2,
                     "timePenalty": 25,
@@ -1915,7 +1915,7 @@
                 },
 
                 {
-                    "item": "Dazzling Thorium t1",
+                    "item": "Dazzling Thorium",
                     "id": "237366", 
                     "color": "#FF6666",
                     "craftTime": 2,
