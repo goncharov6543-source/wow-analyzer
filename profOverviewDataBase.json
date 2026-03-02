@@ -9912,6 +9912,86 @@
 
     "TAILORING": [
         {
+            "groupName": "Wowen Cloth",
+            "icon": "./profOverviewIcons/WowenCloth.jpg",
+            "recipes": [
+                {
+                    "item": "Bright Linen Bolt t1",
+                    "id": "239700",
+                    "color": "#1eff00",
+                    "craftTime": 2,
+                    "timePenalty": 25,
+                    "stats": [
+                        { "name": "Resourcefulness", "count": 0 },
+                        { "name": "Multicraft", "count": 21, "statPenalty": 20, "multiBonus": 2.5 },
+                        { "name": "Crafting Speed", "count": 15 }
+                    ],
+                    "reagents": [
+                        { "name": "Embroidery Floss", "id": "251691", "count": 4 },
+                        { "name": "Bright Linen Bolt t1", "id": "236963", "pickCheapestReagent": true, "count": 1 },
+                        { "name": "Bright Linen Bolt t2", "id": "236965", "pickCheapestReagent": true, "count": 1 }
+                    ],
+                    "outputs": [
+                        { "name": "Bright Linen Bolt t1", "id": "239700", "count": 1}
+                    ],
+                    "moreInfo": [
+                        {
+                            "header": [
+                                {
+                                    "skill": 140
+                                },
+                                {
+                                    "tools": [
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory1.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory1Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory3.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory3Info.png"
+                                        },
+                                        {
+                                            "iconAccessory1": "./profMoreInfoImages/TailoringAccessory2.png",
+                                            "iconAccessory1Info": "./profMoreInfoImages/TailoringAccessory2Info.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "body": [
+                                {
+                                    "talantes": [
+                                        {
+                                            "screen": "./profMoreInfoImages/TailoringBoltCraftingTalantes1.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "footer": [
+                                {
+                                    "buffs": [
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff1.png",
+                                            "buff1Info": "./profMoreInfoImages/ProspectingBuff1Info.png"
+                                        },
+                                        {
+                                            "buff1Icon": "./profMoreInfoImages/ProspectingBuff2.png",
+                                            "buff1Info": "./profMoreInfoImages/GemCraftingBuff2Info.png" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+
+            ]
+        },
+        {
             "groupName": "Embroidered Bags",
             "icon": "./profOverviewIcons/EmbroideredBags.jpg",
             "recipes": [
