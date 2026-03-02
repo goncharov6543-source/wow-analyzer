@@ -1169,5 +1169,151 @@
         "id": 245882,
         "itemUsed": "16"
       }
+    ],
+
+
+
+
+    "ENGINEERING": [
+      {
+        "id": 236949,
+        "name": "Mote of Light",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236951,
+        "name": "Mote of Wild Magic",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236952,
+        "name": "Mote of Pure Void",
+        "itemUsed": "8"
+      },
+      {
+        "id": 236950,
+        "name": "Mote of Primal Energy",
+        "itemUsed": "8"
+      },
+      {
+        "name": "Evercore t1",
+        "id": 243581,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Evercore t2",
+        "id": 243582,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Aetherlume t1",
+        "id": 243578,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Aetherlume t2",
+        "id": 243579,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Majestic Claw",
+        "id": 238528,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Malleable Wireframe",
+        "id": 253302,
+        "itemUsed": "16"
+      },
+      {
+        "name": "Majestic Fin",
+        "id": 238530,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Majestic Hide",
+        "id": 2385329,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Song Gear t1",
+        "id": 243574,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Song Gear t2",
+        "id": 243575,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Soul Sprocket t1",
+        "id": 243576,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Soul Sprocket t2",
+        "id": 243577,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Pile of Junk",
+        "id": 253303,
+        "itemUsed": "24"
+      },
+      {
+        "name": "Refulgent Copper Ore t1",
+        "id": 237359,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Refulgent Copper Ore t2",
+        "id": 237361,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Umbral Tin Ore t1",
+        "id": 237362,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Umbral Tin Ore t2",
+        "id": 237363,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Void-Tempered Plating t1",
+        "id": 238520,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Void-Tempered Plating t2",
+        "id": 238521,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Void-Tempered Hide t1",
+        "id": 238518,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Void-Tempered Hide t2",
+        "id": 238519,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Imbued Bright Linen Bolt t1",
+        "id": 239702,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Imbued Bright Linen Bolt t2",
+        "id": 239703,
+        "itemUsed": "8"
+      },
+      {
+        "name": "Dazzling Thorium",
+        "id": 237366,
+        "itemUsed": "8"
+      }
     ]
   }
