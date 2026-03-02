@@ -9928,8 +9928,8 @@
                     ],
                     "reagents": [
                         { "name": "Embroidery Floss", "id": "251691", "count": 4 },
-                        { "name": "Bright Linen Bolt t1", "id": "236963", "pickCheapestReagent": true, "count": 1 },
-                        { "name": "Bright Linen Bolt t2", "id": "236965", "pickCheapestReagent": true, "count": 1 }
+                        { "name": "Linen Bolt t1", "id": "236963", "pickCheapestReagent": true, "count": 1 },
+                        { "name": "Linen Bolt t2", "id": "236965", "pickCheapestReagent": true, "count": 1 }
                     ],
                     "outputs": [
                         { "name": "Bright Linen Bolt t1", "id": "239700", "count": 1}

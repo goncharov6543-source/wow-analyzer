@@ -772,6 +772,7 @@ const ProfOverview = {
                         let statsHtml = '';
                         let bonusRows = '';
                         let craftSpeedPct = 0;
+                        let extraRevenue = 0; // Додана змінна для збору додаткових профітів
                         
                         if (method.stats && method.stats.length > 0) {
                             let statsRows = `<div class="stats-header">Stats</div>`;
@@ -803,13 +804,19 @@ const ProfOverview = {
                                     const finalPenalty = stat.statPenalty !== undefined ? (stat.statPenalty / 100) : 0.8;
                                     const mBonus = stat.multiBonus !== undefined ? stat.multiBonus : MULTI_BONUS_VAL;
                                     const extra = ((stat.count / 100) * mBonus * totalRevenue) * finalPenalty; 
-                                    if (extra > 0) bonusRows += `<div class="stat-row"><span>Multicraft (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
+                                    if (extra > 0) {
+                                        bonusRows += `<div class="stat-row"><span>Multicraft (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
+                                        extraRevenue += extra; // Додаємо бонус до загального
+                                    }
                                 }
 
                                 if (sName.includes('ingenuity')) {
                                     const finalPenalty = stat.statPenalty !== undefined ? (stat.statPenalty / 100) : 0.8;
                                     const extra = ((stat.count / 100) * (profName.toUpperCase().includes("ENCHANTING") ? 1.0 : 0.5) * totalRevenue) * finalPenalty;
-                                    if (extra > 0) bonusRows += `<div class="stat-row"><span>Ingenuity (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
+                                    if (extra > 0) {
+                                        bonusRows += `<div class="stat-row"><span>Ingenuity (${finalPenalty * 100}%)</span><span class="stat-bonus">+${this.fmt(extra)}</span></div>`;
+                                        extraRevenue += extra; // Додаємо бонус до загального
+                                    }
                                 }
                             });
                             
@@ -820,7 +827,7 @@ const ProfOverview = {
 
                             if (isGathering) {
                                 const effectiveCost = baseCraftCost - resSavings;
-                                const currentProfit = totalRevenue - effectiveCost;
+                                const currentProfit = (totalRevenue + extraRevenue) - effectiveCost; // Враховуємо extraRevenue
                                 currentGPH = currentProfit;
 
                                 efficiencyRows = `
@@ -841,7 +848,7 @@ const ProfOverview = {
                                     if (totalCycleTime > 0) {
                                         const itemsPerHour = 3600 / totalCycleTime;
                                         const effectiveCost = baseCraftCost - resSavings;
-                                        const currentProfit = totalRevenue - effectiveCost;
+                                        const currentProfit = (totalRevenue + extraRevenue) - effectiveCost; // Враховуємо extraRevenue
                                         currentGPH = currentProfit * itemsPerHour;
 
                                         efficiencyRows = `
@@ -858,7 +865,7 @@ const ProfOverview = {
                         }
 
                         const effectiveCost = baseCraftCost - resSavings;
-                        const profit = totalRevenue - effectiveCost;
+                        const profit = (totalRevenue + extraRevenue) - effectiveCost; // Враховуємо extraRevenue тут
                         
                         const displayProfitValue = isGathering ? maxGPH : profit;
 
