@@ -7485,7 +7485,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 11, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 28 },
+                        { "name": "Multicraft", "count": 28, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7554,7 +7554,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 8, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 25 },
+                        { "name": "Multicraft", "count": 25, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7623,7 +7623,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 11, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 28 },
+                        { "name": "Multicraft", "count": 28, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7692,7 +7692,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 8, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 25 },
+                        { "name": "Multicraft", "count": 25, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7761,7 +7761,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 11, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 28 },
+                        { "name": "Multicraft", "count": 28, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7829,7 +7829,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 9, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 26 },
+                        { "name": "Multicraft", "count": 26, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
@@ -7903,7 +7903,7 @@
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 8, "resourcefulnessCape": 50 },
-                        { "name": "Multicraft", "count": 23 },
+                        { "name": "Multicraft", "count": 23, "multiBonus": 2 },
                         { "name": "Crafting Speed", "count": 14 }
                     ],
                     "reagents": [
