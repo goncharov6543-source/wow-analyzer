@@ -987,7 +987,7 @@
                 "item": "Oil of Dawn t2",
                 "id": "243736",
                 "color": "#1eff00",
-                "craftTime": 2,
+                "craftTime": 25,
                 "timePenalty": 25,
                 "stats": [
                     { "name": "Resourcefulness", "count": 8 },
@@ -1057,7 +1057,7 @@
                 "item": "Smuggler's Enchanted Edge t2",
                 "id": "243738",
                 "color": "#1eff00",
-                "craftTime": 2,
+                "craftTime": 25,
                 "timePenalty": 25,
                 "stats": [
                     { "name": "Resourcefulness", "count": 8 },
@@ -1127,7 +1127,7 @@
                 "item": "Thalassian Phoenix Oil t2",
                 "id": "243734",
                 "color": "#1eff00",
-                "craftTime": 2,
+                "craftTime": 25,
                 "timePenalty": 25,
                 "stats": [
                     { "name": "Resourcefulness", "count": 8 },
@@ -5004,7 +5004,7 @@
                     "item": "Codified Azeroot t2",
                     "id": "245765",
                     "color": "#0070dd",
-                    "craftTime": 2,
+                    "craftTime": 30,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -5961,7 +5961,7 @@
                     "item": "Thalassian Missive of the Peerless t2",
                     "id": "245790",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6044,7 +6044,7 @@
                     "item": "Thalassian Missive of the Quickblade t2",
                     "id": "245792",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6127,7 +6127,7 @@
                     "item": "Thalassian Missive of the Fireflash t2",
                     "id": "245786",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6210,7 +6210,7 @@
                     "item": "Thalassian Missive of the Harmonious t2",
                     "id": "245788",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6293,7 +6293,7 @@
                     "item": "Thalassian Missive of the Aurora t2",
                     "id": "245782",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6376,7 +6376,7 @@
                     "item": "Thalassian Missive of the Feverflare t2",
                     "id": "245784",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6465,7 +6465,7 @@
                     "item": "Thalassian Missive of the Crafting Speed t2",
                     "id": "245821",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6548,7 +6548,7 @@
                     "item": "Thalassian Missive of the Defness t2",
                     "id": "245827",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6631,7 +6631,7 @@
                     "item": "Thalassian Missive of the Finesse t2",
                     "id": "245823",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6714,7 +6714,7 @@
                     "item": "Thalassian Missive of the Ingenuity t2",
                     "id": "245815",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6797,7 +6797,7 @@
                     "item": "Thalassian Missive of the Multicraft t2",
                     "id": "245819",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6880,7 +6880,7 @@
                     "item": "Thalassian Missive of the Perception t2",
                     "id": "245825",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -6963,7 +6963,7 @@
                     "item": "Thalassian Missive of the Resourcefulness t2",
                     "id": "245817",
                     "color": "#1eff00",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -7141,7 +7141,7 @@
                     "item": "Contract: The Amani Tribe t2",
                     "id": "245798",
                     "color": "#0070dd",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -7224,7 +7224,7 @@
                     "item": "Contract: The Hara'ti t2",
                     "id": "245796",
                     "color": "#0070dd",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -7307,7 +7307,7 @@
                     "item": "Contract: The Silvermoon Court t2",
                     "id": "245800",
                     "color": "#0070dd",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -7390,7 +7390,7 @@
                     "item": "Contract: The Singularity t2",
                     "id": "245794",
                     "color": "#0070dd",
-                    "craftTime": 3.5,
+                    "craftTime": 8,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 5 },
@@ -8045,7 +8045,7 @@
                     "item": "Refulgent Razorstone t2",
                     "id": "237373",
                     "color": "#1eff00",
-                    "craftTime": 1.5,
+                    "craftTime": 25,
                     "timePenalty": 25,
                     "stats": [
                         { "name": "Resourcefulness", "count": 8, "resourcefulnessCape": 50 },
